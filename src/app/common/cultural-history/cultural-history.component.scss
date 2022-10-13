@@ -1,0 +1,56 @@
+#area-based-development{
+    margin:3rem 0;
+}
+.diagram-img{
+    height: auto;
+}
+.main-title{
+margin: 1rem auto;
+text-align: center;
+font-weight: 300;
+}
+.main-title:after{
+display: block;
+height: 13px;
+content: "";
+background: url(/assets/images/main-title-decor.png) no-repeat center;
+margin: 15px 0 0 0;
+}
+.cultural-img{
+margin: 1rem auto;
+}
+.cultural-img-container{
+padding: 1rem;
+}
+.cultural-img-container img{
+height: 350px;
+width: 100%;
+}
+.cultural-img-container h6{
+text-align: center;
+padding:5px;
+}
+
+.innbanner  img{
+    height: 370px;
+    position: relative;
+    position: relative;
+    /* background-size: cover; */
+    background-position: bottom center;
+    /* background-attachment: fixed; */
+    background-attachment: initial;
+    background-size: 100% 100%;
+    width: 100%;
+    background: linear-gradient(to left, #76a2db, #f8e15b);
+
+  }
+  .innbanner h2 {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #273a4a70;
+      padding: 30px;
+      border-radius: 20px;
+  }

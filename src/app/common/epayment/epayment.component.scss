@@ -1,0 +1,57 @@
+.uk-padding-remove-top{
+    margin-top: 10px;
+}
+.panel-heading.afterLoginPanelHeading {
+    // background-color: rgb(243, 116, 53);
+    background: linear-gradient(to left, #f8ce25, #f45200);
+    padding: 5px 10px !important;
+    color: #fff;
+    font-size: 20px;  
+}
+.uk-position-relative{
+    padding-top: 5px;
+}
+.view {
+    border: 5px solid rgb(48, 45, 45);
+    overflow: hidden;
+    position: relative;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    border: 1px solid #2166a1 !important;
+    background-color: transparent !important;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+.col-sm-4{
+    padding: 30px;
+}
+.col-sm-3{
+    padding: 30px;
+}
+
+
+.innbanner  img{
+    height: 370px;
+    position: relative;
+    position: relative;
+    /* background-size: cover; */
+    background-position: bottom center;
+    /* background-attachment: fixed; */
+    background-attachment: initial;
+    background-size: 100% 100%;
+    width: 100%;
+    background: linear-gradient(to left, #76a2db, #f8e15b);
+
+  }
+  .innbanner h2 {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #273a4a70;
+      padding: 30px;
+      border-radius: 20px;
+  }

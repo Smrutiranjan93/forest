@@ -1,0 +1,171 @@
+
+<section class="uk-section-small">
+    
+    <div class="uk-container" id="grievance-container">
+        <div class="row">
+            <div class="column" style="margin-top: 50px;">
+        <h3>Create New Complaint</h3>
+        </div>
+        <div class="column">
+            <button class="nav-link dropdown-toggle"  id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/signIn" 
+            style="background: #fff; border: 2px solid #3EB489; padding-left: 10px; margin-right: 10px;margin: 2px; width: 133px; float: right;">
+            <span uk-icon="sign-in"></span>LOGIN</button>
+            <ul>
+                <li>
+                    <div class="dropdown-menu" ria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" routerLink="/signUp"  ><span uk-icon="user"></span>Register Now</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+       </div>
+        <div class="grievance-wrapper">
+            <div class="complaint-form">
+                <form action="" id="grievance" [formGroup]="grievanceForm" (ngSubmit)="register()">
+                    <fieldset id="grievance-input">
+                        <div class="grievance-input">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="First Name" value=""
+                            formControlName="firstName"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"
+                            >
+                            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                                <div *ngIf="f.firstName.errors.minlength">First Name should be minimum 1 character long</div>
+                                <div *ngIf="f.firstName.errors.maxlength">First Name should be maximum 20 character long</div>
+                                <div *ngIf="f.firstName.errors.pattern">Only characters are allowed</div>
+                            </div>
+                        </div>
+                        <div class="grievance-input">
+                            <label for="firstname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" value=""
+                            formControlName="lastName"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                             [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }"
+                            >
+                            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                                <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                                <div *ngIf="f.lastName.errors.pattern">Only characters not allowed</div>
+                                <div *ngIf="f.lastName.errors.maxlength">Last Name should be maximum 20 character long</div>
+                            </div>
+                        </div>
+                        <div class="grievance-input">
+                            <label for="email">Email ID</label>
+                            <input type="email" name="email" id="email" placeholder="firstnamelastname@email.com" value=""
+                            formControlName="email"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                            >
+                            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                <div *ngIf="f.email.errors.required">Email is required</div>
+                                <div *ngIf="f.email.errors.pattern">Email must be a valid email address</div>
+                            </div>
+                        </div>
+                        <div class="grievance-input">
+                            <label for="firstname">Mobile Number</label>
+                            <input type="mobile" name="mobile" id="mobile" placeholder="1234567890" value=""
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            (keypress)=numericOnly($event)
+                            formControlName="mobile"
+                            [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }"
+                            >
+                            <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">  
+                                <div *ngIf="f.mobile.errors.required">Mobile Number is required</div>
+                                 <div *ngIf="f.mobile.errors.pattern">Please,Enter 10 digit mobile Number</div> 
+                                </div>
+                            
+                        </div>
+                        <div class="grievance-input">
+                            <label for="ward">Select Area/Ward</label>
+                            <select name="ward" id="ward"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            formControlName="ward"
+                            [ngClass]="{ 'is-invalid': submitted && f.ward.errors }"
+                            >
+                                <option value = '' [disabled]="true" selected hidden>Select Ward</option>
+                                <option value="ward1">ward1</option>
+                                <option value="ward2">ward2</option>
+                                <option value="ward3">ward3</option>
+                                <option value="ward4">ward4</option>
+                            </select>
+                            <div *ngIf="submitted && f.ward.errors" class="invalid-feedback">
+                                <div *ngIf="f.ward.errors.required">Ward is required</div>
+                            </div>
+                        </div>
+                        <div class="grievance-input">
+                            <label for="lane">Select Lane/Street</label>
+                            <select name="lane" id="lane"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            formControlName="lane"
+                            [ngClass]="{ 'is-invalid': submitted && f.lane.errors }"
+                            >
+                                <option value = '' [disabled]="true" selected hidden>Select Lane</option>
+                                <option value="Lane1">Lane1</option>
+                                <option value="Lane2">Lane2</option>
+                                <option value="Lane3">Lane3</option>
+                                <option value="Lane4">Lane4</option>
+                            </select>
+                            <div *ngIf="submitted && f.lane.errors" class="invalid-feedback">
+                                <div *ngIf="f.lane.errors.required">Lane is required</div>
+                            </div>
+                        </div>
+                        <div class="grievance-input">
+                            <label for="dept">Select Department</label>
+                            <select name="dept" id="dept"
+                            formControlName="dept"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            [ngClass]="{ 'is-invalid': submitted && f.dept.errors }"
+                            >
+                                <option value = '' [disabled]="true" selected hidden>Select Department</option>
+                                <option value="Health">Health</option>
+                                <option value="PWD">PWD</option>
+                                <option value="JalKal">JalKal</option>
+                                <option value="Income">Income</option>
+                                <option value="Light">Light</option>
+                                <option value="Account">Account</option>
+                            </select>
+                            <div *ngIf="submitted && f.dept.errors" class="invalid-feedback">
+                                <div *ngIf="f.dept.errors.required">Department is required</div>
+                            </div>
+                        </div>
+                        <div class="grievance-input">
+                            <label for="category">Select Category</label>
+                            <select name="category" id="category"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            formControlName="category"
+                            [ngClass]="{ 'is-invalid': submitted && f.category.errors }"
+                            >
+                                <option value = '' [disabled]="true" selected hidden>Select Category</option>
+                                <option value="Health">Health</option>
+                                <option value="others">others</option>
+                                <option value="others">others</option>
+                                <option value="others">others</option>
+                            </select>
+                            <div *ngIf="submitted && f.category.errors" class="invalid-feedback">
+                                <div *ngIf="f.category.errors.required">Category is required</div>
+                            </div>
+                        </div>
+                        <div class="grievance-input">
+                            <label for="category">Enter Complaint Description</label>
+                            <textarea 
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            name="description" id="description" cols="auto" rows="auto">Describe Your Complaint</textarea>
+                        </div>
+                        <div class="grievance-input">
+                            <label for="complaint-image">Choose Image to Upload</label>
+                            <input type="file" name="complaint-image" id="complaint-image" 
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            >
+                        </div>
+                    </fieldset>
+                        <div class="grievance-input grievance-submit">
+                            <input type="submit" value="submit" id="complaint-submit">
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

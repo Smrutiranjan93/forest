@@ -1,0 +1,31 @@
+
+.innbanner  img{
+    height: 370px;
+    position: relative;
+    position: relative;
+    /* background-size: cover; */
+    background-position: bottom center;
+    /* background-attachment: fixed; */
+    background-attachment: initial;
+    background-size: 100% 100%;
+    width: 100%;
+    background: linear-gradient(to left, #76a2db, #f8e15b);
+
+  }
+  .innbanner h2 {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #273a4a70;
+      padding: 30px;
+      border-radius: 20px;
+  }
+  .uk-margin-small-bottom {
+    margin-bottom: -10px!important;
+  }
+
+  input.star:checked ~ label.star:before {
+    color: rgb(250, 246, 4) !important;
+  }

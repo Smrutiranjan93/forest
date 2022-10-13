@@ -1,0 +1,340 @@
+// .container-fluid{
+//     background-image: url("/assets/images/minister1/forest.jpg");
+// }
+
+
+// * {
+//     box-sizing: border-box;
+//   }
+  
+//   .state_symbol {
+//     float: left;
+//     width: 25%;
+//     padding: 5px;
+//   }
+  
+  
+//   .symbol::after {
+//     content: "";
+//     clear: both;
+//     display: table;
+//   }
+//   .text{
+//   text-align:center;
+//   font-size:16px;
+//   color:#000000
+  
+//   }
+  
+  
+
+  
+//   .welcome-div {
+//       width: 49%;
+//       padding: 1%;
+//   }
+//   .main-outer-div {
+//       max-width: 95%;
+//       background: #eee;
+//       margin: 0 auto;
+//       position: relative;
+//       background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url("/sites/default/files/inline-images/forest-canopy.jpg");
+//       background-size: cover;
+//       background-position: center;
+//   }
+  
+//   .team-member-div {
+//       width: 49%;
+//       padding: 1%;
+//       display: inline-block;
+//       position: absolute;
+//       right: 0;
+//       top: 0;
+//       border: none;
+//   }
+//   .welcome-inner {
+//       padding: 10% 5% 10% 5%;
+//       border: 1px solid #ccc;
+//       background: rgb(37, 161, 142, 0.6);
+//   }
+//   .welcome-inner ul li {
+//       color: #fff;
+//       font-size:16px;
+//   }
+//   .team-member-inner{
+//       padding: 5% 5% 5% 5%;
+//       border: 1px solid #ccc;
+  
+//       background: rgb(156 225 150 / 62%)
+//   }
+//   .welcome-inner h2 {
+//       color: black;
+// text-align: center;
+//       font-size: 18px;
+//       font-weight: 600;
+//   }
+//   .welcome-inner p {
+//       color: #fff;
+//       font-size:16px;
+//   }
+//   .rtejustify {
+//       text-align: justify;
+//   }
+//   .team-img img {
+//       border-radius: 50%;
+//       border: 2px solid #023b1f;
+//       width: 85px;
+//   }
+//   .team-discription {
+//       width: 75%;
+//   }
+//   .team-member-body {
+//       display: flex;
+//       justify-content: flex-end;
+//       align-items: stretch;
+//       padding-bottom: 2%;
+//   }
+//   .news-updates-div {
+//       width: 49%;
+//       padding: 1%;
+//       border: none;
+//   }
+  
+//   .tenders-div {
+//       width: 49%;
+//       padding: 1%;
+//       border: none;
+//   }
+//   .news-update-inner {
+//       padding: 10% 5% 10% 5%;
+//     //   background: rgb(0, 165, 207, 0.6);
+//       background: rgba(6, 222, 67, 0.6);
+//   }
+     
+//   .tender-div-inner {
+//       padding: 10% 5% 10% 5%;
+//       background: rgba(146, 246, 6, 0.6);
+//     //   background: rgb(159, 255, 203, 0.6);
+     
+//   }
+//   .tender-div-inner ul li a{
+//       color: white;
+//       font-size: 17px;
+
+//   }
+//   .scroll {
+//     width: auto;
+//     height: 23em;
+//     margin: 1em auto;
+//     overflow: hidden;
+    
+//     position: relative;
+//     box-sizing: border-box;
+//   }
+  
+//   .marquee {
+//     top: 6em;
+//     position: relative;
+//     box-sizing: border-box;
+//     animation: marquee 15s linear infinite;
+//   }
+  
+//   .marquee:hover {
+//     animation-play-state: paused;
+//   }
+  
+//   /* Make it move! */
+//   @keyframes marquee {
+//     0% {
+//       top: 8em;
+//     }
+//     100% {
+//       top: -11em;
+//     }
+//   }
+  
+//   /* Make it look pretty */
+//   .microsoft .marquee {
+//     margin: 0;
+//     padding: 0 1em;
+//     line-height: 1.5em;
+//     font: 1em "Segoe UI", Tahoma, Helvetica, Sans-Serif;
+//   }
+  
+//   .microsoft:before,
+//   .microsoft::before,
+//   .microsoft:after,
+//   .microsoft::after {
+//     left: 0;
+//     z-index: 1;
+//     content: "";
+//     position: absolute;
+//     pointer-events: none;
+//     width: 100%;
+//     height: 2em;
+//     background-image: linear-gradient(top, #fff, rgba(255, 255, 255, 0));
+//   }
+  
+//   .microsoft:after,
+//   .microsoft::after {
+//     bottom: 0;
+//     transform: rotate(180deg);
+//   }
+  
+//   .microsoft:before,
+//   .microsoft::before {
+//     top: 0;
+//   }
+//   .microsoft.scroll.tender {
+//       height: 275px !important;
+//   }
+//   li.rtejustify {
+//       border-bottom: 1px solid #77ce0a;
+//       padding-bottom: 10%;
+//   }
+//   .news-updates-div ul a {
+//       color: #fff;
+//   }
+  
+//   .bottom-video {
+      
+//       right: 0;
+//       bottom: 20px;
+//       margin-top: 20px;
+//   }
+//   .video-gal-main{
+//       background: rgb(127 207 39 / 55%);
+//       padding: 0% 12% 1% 5%;
+//       margin-top: 26px;
+//   }
+//   .video-gal-inner {
+//       display: flex;
+//       width: 100%;
+//       margin-bottom: 7%;
+   
+  
+//   }
+//   .video-desc {
+//       width: 65%;
+//       padding-left: 5px;
+//       text-align: justify;
+//   }
+//   .video-imgs {
+//       width: 37%;
+//   }
+//   .video-desc a {
+//       color: white;
+     
+//   }
+//   .mySlides {
+//       display:none;
+//       padding: 1%;
+//       margin-left: 0;
+     
+  
+//   }
+//   .title_text {
+//       text-align: center;
+//       color: #fff;
+//       margin-bottom: 0px;
+//       padding: 22px 1px 3px 4px;
+//       right: 0;
+//       bottom: 20px;
+//       font-size: 21px;
+//       font-weight: 600;
+//       margin-top: 25px;
+//       background: rgb(0, 0, 0, 0.5);
+//   }
+  
+//   .w3-content w3-section{
+//       vertical-align: middle;
+//   }
+//   .w3-display {
+//       position: absolute;
+//       top: 97%;
+//       left: 50%;
+//       font-size: initial;
+//       transform: translate(-50%,-50%);
+//       -ms-transform: translate(-50%,-50%);
+//   }
+  
+
+//   .site-info{
+//     text-align:center;
+//     font-size:13px;
+//     }
+
+
+
+//     .top_left {
+//         float: left;
+//        }
+//     #site-title {
+//         text-align: left;
+//         font-size: 25px;
+//         color: black;
+//         padding-top: 30px;
+//         line-height: 0px;
+//     }
+//     #site-title1 {
+//         text-align: left;
+//         font-size: 25px;
+//         color: black;
+//         line-height: 50px;
+//     }
+
+
+
+
+
+
+
+
+
+//     .col-lg-12.col-xs-12 {
+//         padding-top: 30px;
+//     }.common-left {
+//         float: left;
+//         position: relative;
+//         padding-left: 0px;
+//         background-color: beige;
+//         height: 38px;
+//     }
+//     div.find .bttn-search {
+//         background: #057e07;
+//         color: #ffffff;
+//         border: 1px solid #057e07;
+//     }
+//     .input {
+//         margin: 2px 0;
+//         padding: 4px;
+//     }
+//     .common-left ul li {
+//         float: left;
+//         line-height: 132%;
+//         font-size: 67%;
+//         font-weight: 600;
+//         text-transform: uppercase;
+//         height: 36px;
+//         padding-top: 10px;
+//         padding-left: 3px;
+//     }
+//     .common-container ul {
+//         list-style: none;
+//     }
+//     .common-left ul li.ministry {
+//         padding-left: 10px;
+//         margin-left: 10px;
+//         border-left: 1px solid #eeeeee;
+//     }
+//     .common-left ul li.gov-india {
+//         text-align: right;
+//     }
+//     .common-left ul li.gov-india {
+//         text-align: right;
+//         padding-top: 10px;
+//     }
+//     ul#sizes {
+//         font-size: x-large;
+       
+//     }

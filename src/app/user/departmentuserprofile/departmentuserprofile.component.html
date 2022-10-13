@@ -1,0 +1,119 @@
+<section class="uk-section-small">
+    <div class="uk-container" id="profile-container">
+        <div class="container-tab">
+            <div class="tab">
+                <ul class="nav justify-content-center">
+                    <li id="home" [class.color]="id === 'Home'" (click)="tabChange('Home')">My Profile</li>
+                    <li id="TutorRegister" [class.color]="id === 'TutorRegister'" (click)="tabChange('TutorRegister')">My Complaints</li>
+                </ul>
+            </div>
+            <div class="content-tab">
+                <div class="content-value" *ngIf="id === 'Home'">
+                    <h2>Department User Profile</h2><br>
+                    <div class="my-profile-wrapper">
+                        <div class="profile-form-wrapper">
+                            <div class="profile-icon">
+                                <img src="/assets/images/profile.png" alt="">
+                            </div>
+                            <div class="profile-form">
+                                <form action="" id="profile">
+                                    <fieldset id="profile-input">
+                                        <div class="profile-input">
+                                            <label for="firstname">First Name</label>
+                                            <input type="text" name="firstname" id="firstname" placeholder="First Name" value="">
+                                        </div>
+                                        <div class="profile-input">
+                                            <label for="firstname">Last Name</label>
+                                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" value="">
+                                        </div>
+                                        <div class="profile-input">
+                                            <label for="email">Email ID</label>
+                                            <input type="email" name="email" id="email" placeholder="username@host.com" value="">
+                                        </div>
+                                        <div class="profile-input">
+                                            <label for="firstname">Mobile Number</label>
+                                            <input type="mobile" name="mobileNo" id="mobile" placeholder="1234567890" value="">
+                                        </div>
+                                        <div class="profile-input">
+                                            <label for="address">Address</label>
+                                            <input type="text" name="address" id="address" placeholder="Area, Street, Locality, City, Pin Code,  etc" value="">
+                                        </div>
+                                           
+                                            <button class="uk-button uk-button-primary userupdatebtn">Update</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-value" *ngIf="id === 'TutorRegister'">
+                    <h2>Complaints</h2><br>
+                    <div class="">
+                        <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>User Id</th>
+                                <th>Date</th>
+                                <th>Category</th>
+                                <th>Address</th>
+                                <th>Status</th>
+                                <th>Review</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>15/02/2018</td>
+                                <td>Health</td>
+                                <td>moradabad, street2</td>
+                                <td>Closed</td>
+                                <td><a data-toggle="modal" data-target="#myModal"><span style="color: blue;">view</span>&nbsp;&nbsp;<span>
+                                  <img src="assets/images/pdf.png"/></span></a>&nbsp;&nbsp;<span><a
+                                    ><i class="fa fa-download"></i></a></span></td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>15/02/2018</td>
+                                <td>Health</td>
+                                <td>moradabad, street2</td>
+                                <td>Closed</td>
+                                <td><a data-toggle="modal" data-target="#myModal"><span style="color: blue;">view</span>&nbsp;&nbsp;<span>
+                                  <img src="assets/images/pdf.png"/></span></a>&nbsp;&nbsp;<span><a
+                                    ><i class="fa fa-download"></i></a></span></td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>15/02/2018</td>
+                                <td>Health</td>
+                                <td>moradabad, street2</td>
+                                <td>Closed</td>
+                                <td><a data-toggle="modal" data-target="#myModal"><span style="color: blue;">view</span>&nbsp;&nbsp;<span>
+                                  <img src="assets/images/pdf.png"/></span></a>&nbsp;&nbsp;<span><a
+                                    ><i class="fa fa-download"></i></a></span></td>
+                              </tr>
+                              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div style="text-align: center;">
+                                        <iframe src="assets/images/blank.pdf"
+                                          style="width:400px; height:500px;" frameborder="0"></iframe>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </tbody>
+                          </table>
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>

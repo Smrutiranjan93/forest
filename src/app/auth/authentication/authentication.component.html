@@ -1,0 +1,50 @@
+<section class="uk-section-small" id="login-section">
+    <div class="uk-container" id="register-container">
+        <!-- <h3>Registration</h3> -->
+        <div class="auth-wrapper uk-flex uk-flex-center">
+     <!-- <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" uk-switcher="animation: uk-animation-fade">
+            <li><a href="#">User</a></li>
+            
+        </ul> -->
+            <!-- <ul class="uk-margin">
+                <li> -->
+            <form id="otpVerify" [formGroup]="otpForm" (ngSubmit)="otpVerify()">
+                <!-- <div id="collapseExample" [hidden]="!advanceFlag"> -->
+                    <!-- <div class="uk-margin-small">
+                        <p>Enter your Mobile Number</p>
+                        <input class="uk-input" type="text" id="mobile" placeholder="Mobile Number" formControlName="mobile" value= "{{ no }}"
+                            (keypress)=numericOnly($event) [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }" 
+                        />
+                        <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
+                            <div *ngIf="f.mobile.errors.required">Phone Number is required</div>
+                            <div *ngIf="f.mobile.errors.pattern">Invalid Phone Number</div>
+                        </div>
+                        !-- <input class="uk-input" type="text" id="mobile" placeholder="Mobile Number" formControlName="mobile" /> --
+                        {{ no }}
+                    </div>
+                        !-- <div class="uk-margin-small"> --
+                    <button type="submit" class="uk-button uk-button-primary uk-width-1-1" aria-controls="collapseExample"
+                        [attr.aria-expanded]="!isCollapsed" [hidden]="!advanceFlag" (click)="enableOtp()">
+                        Send OTP
+                    </button> -->
+                <!-- </div> -->
+                    <!-- </div> -->
+                <div id="collapseExample">
+                    <div class="uk-margin-small">
+                        <p>Enter OTP you just recived through sms</p>
+                        <input class="uk-input" type="number" placeholder="OTP">
+                    </div>
+                    <div class="uk-margin-small">
+                        <a routerLink="/signIn"><button class="uk-button uk-button-primary uk-width-1-1">Verify OTP</button></a>
+                    </div>                    
+                    <div class="uk-flex uk-flex-between">
+                        <a href=""><p>Resend OTP</p></a>
+                        <a routerLink="/signIn"><button class="btn btn-outline-warning btn-sm">Skip >>></button></a>                    
+                    </div>
+                </div>              
+                <!-- </li>
+            </ul> -->
+            </form>
+        </div>
+    </div>
+</section>

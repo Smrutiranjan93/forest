@@ -1,0 +1,234 @@
+<!-- <section class="innbanner">
+    <img src="assets/images/contactus.png">
+    <h2>Contact Us</h2>
+</section>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="info">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111835.40440162567!2d78.69751177503355!3d28.843135359864906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afbea2f5646c9%3A0xb8c97ce4e95398db!2sMoradabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1641198657269!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""></iframe>
+                                  </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info">
+                                    <div class="address">
+                                        <i class="fa fa-map-marker"></i>
+                                      <h4>Location:</h4>
+                                      <p>Pili Kothi, Water Works Compound, Civil Lines, Moradabad, Uttar Pradesh, 244001</p>
+                                    </div>
+                        
+                                    <div class="email">
+                                      <i class="fa fa-envelope"></i>
+                                      <h4>Email:</h4>
+                                      <p>moradabadnagarnigam@gmail.com</p>
+                                    </div>
+                        
+                                    <div class="phone">
+                                      <i class="fa fa-phone"></i>
+                                      <h4>Call:</h4>
+                                      <p>+91 9105-900-500</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            
+                        </div>
+                      </div>
+        </div> -->
+   
+        <!-- <div class="row mt-5 justify-content-center" data-aos="fade-up">
+            <div class="col-lg-10">
+                <form  method="post" role="form" class="php-email-form"
+                [formGroup]="contactForm" (ngSubmit)="send()">
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <input Id="Name" class="form-control" id="Name" name="fname" 
+                            placeholder="Your Name"  type="text" value="" 
+                            formControlName="fname"
+                            [ngClass]="{ 'is-invalid': submitted && f.fname.errors }"/>
+                            <div *ngIf="submitted && f.fname.errors" class="invalid-feedback">
+                                <div *ngIf="f.fname.errors.required">First Name is required</div>
+                                <div *ngIf="f.fname.errors.minlength">First Name should be minimum 1 character long</div>
+                                <div *ngIf="f.fname.errors.maxlength">First Name should be maximum 20 character long</div>
+                                <div *ngIf="f.fname.errors.pattern">Only characters are allowed</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input Id="Email" class="form-control" id="Email" name="Email" placeholder="Your Email" type="text" value="" />
+                            <div class="validate"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <input Id="Mobile" class="form-control" id="Mobile" name="Mobile" 
+                             placeholder="Your Phone no" 
+                             type="text" value="" 
+                            [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }"
+                            (keypress)=numericOnly($event)
+                            formControlName="mobile"/>
+                            <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">  
+                                <div *ngIf="f.mobile.errors.required">Mobile Number is required</div>
+                                 <div *ngIf="f.mobile.errors.pattern">Please,Enter 10 digit mobile Number</div> 
+                                </div>
+                            </div>
+                        <div class="col-md-6 form-group">
+                            <input Id="Subject" class="form-control" id="Subject" name="Subject" placeholder="Subject" type="text" value="" />
+                            <div class="validate"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea Id="message" class="form-control" cols="20" id="message" 
+                        name="message" placeholder="Message" required="true" rows="5"
+                        formControlName="message"
+                        [ngClass]="{ 'is-invalid': submitted && f.message.errors }">
+                        </textarea>
+                        <div *ngIf="submitted && f.message.errors" class="invalid-feedback">  
+                            <div *ngIf="f.message.errors.required">Message is required</div> 
+                            </div> 
+                        <div class="validate"></div>
+                    </div>
+                    <p style="color: red"></p>
+                    <div class="text-center"><input class="btn btn-success" type="submit" onclick="return validateform();" value="Send Message" id="btnNoticeSave" name="submit" /></div>
+                </form>
+            </div>
+        </div> -->
+    <!-- </div>
+</section> -->
+
+
+
+<!-- <div class="main">
+<h2 class="text-center">Contact Us</h2>
+<div class="container">
+<div class="row ">
+    <div class="col-sm-4 " style="border:1px solid green ;">
+        <div class=" row-cols-4 , row-cols-md-3  email"  style="    padding: 74px 3px 4px 0px;">
+            <h4> <i class="fa-solid fa-envelope"></i> Email</h4>
+        <a href="">info@westechltd.com</a>
+        </div>
+        <div class=" row-cols-4 , row-cols-md-3  location1"  style="  padding: 74px 3px 4px 0px; ">
+            <h4>Location</h4>
+            <p><i class="fa-sharp fa-solid fa-location-dot fa-2x"></i> GA-70, Gayatri Vihar, Chandrasekharpur, Bhubaneswar, Odisha Phone: 0674 (2745384)</p>
+        </div>
+        <div class=" row-cols-4 , row-cols-md-3  number"  style="   padding: 74px 3px 4px 0px;">
+            <h4><i class="fa-solid fa-phone-volume"></i> Call</h4>
+            <p>(0674) 2954095</p>
+        </div>
+      
+    </div>
+    <div class="col-sm-8 career">
+
+<div class="container-lg body">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="contact-form">
+          <h1>Get in Touch</h1>
+          <form action="/examples/actions/confirmation.php" method="post">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputName">Name</label>
+                  <input type="text" class="form-control" id="inputName" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" required>
+                </div>
+              </div>
+            </div>            
+            <div class="form-group">
+              <label for="inputSubject">Subject</label>
+              <input type="text" class="form-control" id="inputSubject" required>
+            </div>
+            <div class="form-group">
+              <label for="inputMessage">Message</label>
+              <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+            </div>            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+</div>
+ -->
+
+ <!-- Contact Start -->
+ <section class="innbanner">
+    <img src=" /assets/images/banner.gif
+       ">
+   <h2 id="backdrop">Contact us</h2>
+</section>
+ <div class="contact wow fadeInUp">
+    <div class="container">
+        <div class="section-header text-center">
+            <h3 style="color:white ;">Get In Touch</h3>
+            <h2 style="color:white ;">For Any Query</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="height: 483px;">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="flaticon-address"></i>
+                        <div class="contact-text">
+                            <h2>Location</h2>
+                            <p> A-84, Kharavela Nagar Bhubaneswar - 751001, Odisha, India
+                                Phone: 0674 2534086, 2534269 </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="flaticon-call"></i>
+                        <div class="contact-text">
+                            <h2>Phone</h2>
+                            <p>0674 2534086</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="flaticon-send-mail"></i>
+                        <div class="contact-text">
+                            <h2>Email</h2>
+                            <p>info@ofdc.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form action="https://formsubmit.co/manoj.s@nucigent.co.in" method="POST" name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Mobile" required="required" data-validation-required-message="Please enter a subject" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button class="btn" type="submit" id="sendMessageButton">Submit Form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Contact End -->
+  
+  

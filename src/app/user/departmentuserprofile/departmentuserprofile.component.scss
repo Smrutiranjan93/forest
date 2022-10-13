@@ -1,0 +1,153 @@
+.my-profile-wrapper{
+    background-color:#f8f9fb;
+    width: 100%;
+    padding:1.5rem;
+    box-sizing: border-box;
+    border:0.5px solid #E5E5E5;
+}
+.profile-form-wrapper{
+    max-width:1100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.profile-icon{
+    width: 250px;height: 250px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-form{
+    max-width: 780px;
+}
+.profile-input{
+    display: inline-grid;
+    float: left;
+}
+.profile-input label{
+    margin: 10px;
+}
+.profile-input input{
+    box-sizing: border-box;
+    width: 350px;
+    height: 40px;
+    padding:5px 10px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    margin: 10px;
+}
+.profile-input input#address{
+    width:720px;
+    height:60px;
+}
+.my-complaint-wrapper{
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+.complaint{
+    max-width:1100px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background:#f8f9fb;
+    padding: 1rem;
+}
+.complaint label{
+    margin: 0;
+}
+.complaint small{
+    font-size: 15px;
+    margin:0 5px;
+}
+.case{
+    font-weight:500;
+}
+.case.date{
+    color: #848484;
+}
+.case.status small{
+    color: #f4824b;
+}
+@media (max-width:430px){
+    .my-profile-wrapper{
+        padding:0;
+        display: block;
+    }
+    .profile-form-wrapper{
+        display: block;
+    }
+    .profile-icon{
+        height: auto;width: auto;
+    }
+    .profile-input{
+        display: grid;
+        float: none;
+    }
+    .profile-input input, .profile-input input#address{
+        width: auto;
+    }
+    .complaint{
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+.tab ul{
+    padding: 10px;
+    background: rgb(5, 123, 233);
+    display: block;
+    border-radius: 2px;
+    margin: 0;
+    float: right;
+    text-align: center;
+}
+.tab ul li{
+    display: inline-block;
+    list-style-type: none;
+    border-right: 2px solid #fff;
+    color: rgb(75, 67, 67);
+    font-size: 16px;
+    padding: 0 24px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+.tab ul li.submenu ul{
+    list-style-type: square;
+    position: relative;
+}
+.tab ul li{
+    color: #fff;
+}
+.tab ul li :last-child{
+    border-right: none;
+}
+.tab ul li :hover{
+    color: #0059ff;
+}
+.color{
+    color: #e4ff00 !important;
+}
+.content-tab{
+    background: rgb(253,250,250);
+    padding: 20px;
+    border: 1px solid rgb(5, 104, 233);
+}
+.content-value h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+.userupdatebtn{
+  float: right;
+  margin-right: 50px;
+}
+
+
+

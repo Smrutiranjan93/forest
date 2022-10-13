@@ -1,0 +1,210 @@
+<section class="innbanner">
+  <img src="assets/images/eventdetails.png">
+  <h2 id="backdrop">Event Details</h2>
+</section>
+<section>
+  <div class="container-fluid" style="margin-top: 20px;">
+    <div class="row">
+      <article class="contentpart">
+
+        <div class="eventTab">
+          <ul class="eventTabNav">
+            <li id="Events" [class.color]="id === 'Events'" (click)="tabChange('Events')"><a>Event Details</a></li>
+            <li id="Photos" [class.color]="id === 'Photos'" (click)="tabChange('Photos')"><a>Photos</a></li>
+            <li id="Videos" [class.color]="id === 'Videos'" (click)="tabChange('Videos')"><a>Videos</a></li>
+            <li id="Members" [class.color]="id === 'Members'" (click)="tabChange('Members')"><a
+                routerLink="/eventdetails">Members</a></li>
+            <li id="Bulletin" [class.color]="id === 'Bulletin'" (click)="tabChange('Bulletin')"><a
+                routerLink="/eventdetails">Bulletin Board</a></li>
+            <li id="Poll" [class.color]="id === 'Poll'" (click)="tabChange('Poll')"><a
+                routerLink="/eventdetails">Poll</a></li>
+          </ul>
+          <div class="eventTabContainer">
+            <div class="region region-content">
+              <div id="block-system-main" class="block block-system">
+                <div class="content">
+                  <div class="node node-event-calendar node-full clearfix">
+                    <div class="content clearfix">
+                      <a routerLink="/eventlist" class="slideBtn uk-button uk-button-primary uk-margin-auto">Back to Events</a>
+                      <div class="dateWrap cf dateWrapTop">
+                        <p class="onDate">28th Oct 2022</p>
+                       
+                        <!-- <div class="btns"><a routerLink="/eventlist" class="slideBtn uk-button uk-margin-auto uk-margin-top">Back to
+                            Events</a></div> -->
+                      </div>
+                      
+                      <div class="content-tab">
+                        <div class="content-value" *ngIf="id === 'Events'">
+                          <p>The grand opening ceremony of the Vikas Deepotsav Mela organized by the Municipal
+                            Corporation was
+                            completed at Ramlila Ground Linepar Bhubaneswar, in which the State Panchayati Raj Minister
+                            Mr. X X Chaudhary, who was present as the chief guest, said in his address that
+                            the fair is integral to our Ganga Jamuni culture and communal harmony. It is a part and such
+                            events teach to live in harmony with each other. He said that fairs remove the tension
+                            prevailing
+                            in the public mind and give the message of mutual love.
+
+
+                          </p>
+                          <div class="">
+                            <div class="region region-content">
+                              <div id="block-system-main" class="block block-system">
+                                <div class="content">
+                                  <div class="node node-event-calendar node-full clearfix">
+                                    <div class="content clearfix">
+                                      <div class="eventImg">
+                                        <img src="assets/images/latestevent.jpg" alt="" title="" height="307"
+                                          width="570">
+                                      </div>
+                                      <div class="dateWrap cf">
+                                        <span class="onLocation"><a
+                                            href="http://www.google.com/maps/place/, India@28.5861,77.23919999999998"
+                                            target="_blank"><img
+                                              src="https://events.mygov.in/sites/all/themes/mygov/images/pinpoint.png">Khordha,
+                                            India</a></span>
+                                        <div class="shareThis">
+                                          <a href="https://www.facebook.com/SmartCityMission" target="_blank"
+                                            class="facebook"><i class="fa fa-facebook"></i></a>
+                                          <a href="https://twitter.com/nagarnigammbd/" target="_blank"
+                                            class="twitter"><i class="fa fa-twitter"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+
+                          </div>
+                        </div>
+                        <div class="content-value" *ngIf="id === 'Photos'">
+                          <div class="uk-container">
+                            <div class="uk-child-width-1-4@m uk-child-width-1-2 gallery uk-grid-small" uk-grid
+                              uk-lightbox="animation: slide">
+                              <div>
+                                <a class="uk-inline" href="assets/images/events/event4.jpg"
+                                  data-caption="Deepotsav Mela">
+                                  <img src="assets/images/events/event4.jpg" alt="">
+                                </a>
+                              </div>
+                              <div>
+                                <a class="uk-inline" href="assets/images/events/event1.jpg"
+                                  data-caption="Deepotsav Mela">
+                                  <img src="assets/images/events/event1.jpg" alt="">
+                                </a>
+                              </div>
+                              <div>
+                                <a class="uk-inline" href="assets/images/events/event3.jpg"
+                                  data-caption="Deepotsav Mela">
+                                  <img src="assets/images/events/event3.jpg" alt="">
+                                </a>
+                              </div>
+                              <div>
+                                <a class="uk-inline" href="assets/images/events/event2.jpg"
+                                  data-caption="Deepotsav Mela">
+                                  <img src="assets/images/events/event2.jpg" alt="">
+                                </a>
+                              </div>
+
+
+
+
+
+
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-value" *ngIf="id === 'Videos'">
+                          <div class="uk-container">
+                            <div class="row portfolio-container aos-init aos-animate" data-aos="fade-up"
+                              style="position: relative; height: 226.875px;">
+
+                              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe src="https://www.youtube.com/embed/z755t11OiNI" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen=""></iframe>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe src="https://www.youtube.com/embed/z755t11OiNI" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen=""></iframe>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe src="https://www.youtube.com/embed/z755t11OiNI" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen=""></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-value" *ngIf="id === 'Members'">
+                          <div class="container-fluid uk-position-relative panel-heading">
+                            <div class="container" style="padding-bottom: 20%;">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="view-empty">
+                                    <p class="datashow">No active Member(s) available Currently for this Event.</p>
+                                  </div>
+                                  <!-- <div class="viewAll">
+                                                <a href="" class="viewAllBtn slideBtn" title="View All Events">View All Events</a>
+                                              </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-value" *ngIf="id === 'Bulletin'">
+                          <div class="container-fluid uk-position-relative panel-heading">
+                            <div class="container" style="padding-bottom: 20%;">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="view-empty">
+                                    <p class="datashow">No Topic(s) available Currently for this Event.</p>
+                                  </div>
+                                  <!-- <div class="viewAll">
+                                                <a href="" class="viewAllBtn slideBtn" title="View All Events">View All Events</a>
+                                            </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-value" *ngIf="id === 'Poll'">
+                          <div class="container-fluid uk-position-relative panel-heading">
+                            <div class="container" style="padding-bottom: 20%;">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="view-empty">
+                                    <p class="datashow">No Poll(s) available Currently for this Event.</p>
+                                  </div>
+                                  <!-- <div class="viewAll">
+                                                <a href="" class="viewAllBtn slideBtn" title="View All Events">View All Events</a>
+                                            </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

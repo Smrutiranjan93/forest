@@ -1,0 +1,66 @@
+.panel-heading.afterLoginPanelHeading {
+    background: linear-gradient(to left, #f8ce25, #f45200);
+    padding: 12px 10px !important;
+    color: #fff;
+    font-size: 20px;  
+    height: 50px;
+}
+.uk-position-relative{
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15%;
+}
+.serice-item-list { 
+    border: 1px solid hsla(0,0%,85.9%,.64); 
+    padding: 10px 30px 60px 30px;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg,#f9f9f9 75%,#f9f9f9);
+    box-shadow: 0 0 9px 0 rgb(0 0 0 / 35%);
+}
+.mainmenu li{
+    list-style: square;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    color: #0a0a0a;;
+    cursor: pointer;
+}
+.submenus li{
+    list-style-type: circle;
+    font-size: 13px;
+    color:#1800f4 ;
+}
+.submenuss li{
+    list-style-type: disc;
+    font-size: 10px;
+    color: #1800f4;
+}
+
+
+.innbanner  img{
+    height: 370px;
+    position: relative;
+    position: relative;
+    /* background-size: cover; */
+    background-position: bottom center;
+    /* background-attachment: fixed; */
+    background-attachment: initial;
+    background-size: 100% 100%;
+    width: 100%;
+    background: linear-gradient(to left, #76a2db, #f8e15b);
+
+  }
+  .innbanner h2 {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #273a4a70;
+      padding: 30px;
+      border-radius: 20px;
+  }
+  .h4{
+color: #0a0a0a;
+  }

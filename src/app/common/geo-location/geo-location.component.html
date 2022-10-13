@@ -1,0 +1,596 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<section class="innbanner">
+    <img src="assets/images/location.png">
+    <h2>Near me Location</h2>
+</section>
+<!-- <section class="uk-section-small">
+    <div class="uk-container">
+        <div class="row">
+
+            <div class="col-12">
+                <div class="title text-center event">
+                    <h2 style="font-size: large;">Emergency Services</h2>
+                    <div class="border"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <section class="about-2 uk-section" id="about">
+            <div class="container">
+
+                <div>
+                    <div>
+                        <ul class="uk-slider-items events emergency-services uk-child-width-1-3@s uk-grid">
+                            <li>
+                                <div>
+                                    <div class="service_heading">
+                                        <div class="service_icon">
+                                            <img src="assets/images/hospital.jpg" alt="">
+                                        </div>
+                                        <div class="service_title">
+                                            <h4>Govt. Hospitals</h4>
+                                        </div>
+                                    </div>
+                                    <div class="service_list">
+                                        <ul>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Sardar Baldev Bhai Patel Government Hospital</h6>
+                                                       
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>1234567890</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <a href="https://www.google.com/maps/place/RPPV%2B994+Government+Hospital,+Vikas+Colony,+Buddhi+Vihar,+Moradabad,+Uttar+Pradesh+244001/@28.8307051,78.7531335,15z/data=!4m5!1m2!2m1!1smoradabad+govmet+hospital!3m1!1s0x390afdf167c7e13f:0xb74500f6b64e919c">
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>Sector 12, block E,Street 1,mujesh village,Moradabad,750000</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Pt. Din Dayal Upahadhy, District Combined Hospital</h6>
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>1234567890</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>RQX8+5FJ, Civil Lines, Moradabad, Uttar Pradesh 244001</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Nagriya Prathmik Swast Kendra</h6>
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>+918006738258</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>Asim Bihari School Rd, mehbulla ganj, Katghar, Moradabad, Uttar Pradesh 244001, India</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Singh Hospital</h6>
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>+919837558800</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>Gandhi Nagar Road, Gandhi Nagar, Moradabad, Uttar Pradesh 244001, India</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                     
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="service_heading">
+                                        <div class="service_icon">
+                                            <img src="assets/images/fire_station.jpg" alt="">
+                                        </div>
+                                        <div class="service_title">
+                                            <h4>Fire Brigade Station</h4>
+                                        </div>
+                                    </div>
+                                    <div class="service_list">
+                                        <ul>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Fire Station, Tarikhana</h6>
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>112</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>109, Hallet Rd, Civil Lines, Moradabad, Uttar Pradesh 244001</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Nidhi Fire Service Pvt.Ltd</h6>
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>112</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>Vikas Nagar Line Par Near Ramleela Ground ,Moradabad</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Saini Fire Service</h6>
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>112</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>Rampur Rd, Dehri Gaon, Moradabad, Uttar Pradesh 244001</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Nidhi Fire Service Pvt.Ltd</h6>
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>112</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill="none" stroke="#000" stroke-width="1.01" d="M10,0.5 C6.41,0.5 3.5,3.39 3.5,6.98 C3.5,11.83 10,19 10,19 C10,19 16.5,11.83 16.5,6.98 C16.5,3.39 13.59,0.5 10,0.5 L10,0.5 Z">
+                                                            </path>
+                                                            <circle fill="none" stroke="#000" cx="10" cy="6.8" r="2.3"></circle>
+                                                        </svg></span>Vikas Nagar Line Par Near Ramleela Ground ,Moradabad</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                     
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="service_heading">
+                                        <div class="service_icon">
+                                            <img src="assets/images/ambulance.png" alt="">
+                                        </div>
+                                        <div class="service_title">
+                                            <h4>Ambulance Services</h4>
+                                        </div>
+                                    </div>
+                                    <div class="service_list">
+                                        <ul>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Aalam Ambulance</h6>
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>	<span>+(91) 9627872899</span></p>
+                                                   
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                            
+                                                        </svg></span>Sambhal Road, Hartala, Moradabad</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Balaji Ambulance Seva</h6>
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>	+(91) 9520619224 ,+(91) 8192075852</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>Kanth Road, Moradabad, </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Sanjeev Thakur Ambulance</h6>
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>	+(91) 9927580837</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>Civil Lines Hospital, Moradabad</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Mukesh Ambulance Service</h6>
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>	+(91) 9837619030 ,+(91) 9837691586</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>Delhi Road, Moradabad</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                     
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="service_heading">
+                                        <div class="service_icon">
+                                            <img src="assets/images/police_station.png" alt="">
+                                        </div>
+                                        <div class="service_title">
+                                            <h4>Police Stations</h4>
+                                        </div>
+                                    </div>
+                                    <div class="service_list">
+                                        <ul>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Police Station Majhola</h6>
+                                                    
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>094544 04047</p>
+                                                   
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span> Delhi Rd, Majhola, Moradabad </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Katghar Police Station</h6>
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>094544 04043</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>NH 24, Lajpat Nagar, Moradabad</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Pakwara Police Station</h6>
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>094544 04054</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span> Pakwara,Moradabad Road</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="service_place">
+                                                    <div class="service_place_info">
+                                                        <h6>Kotwali Police Station</h6>
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="telephone" class="uk-margin-small-right">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>094544 04044</p>
+                                                    </div>
+                                                    <div class="service_location">
+                                                        <p class="date" style="color:#f4825b;"><span uk-icon="location" class="uk-margin-small-right uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        </svg></span>Pat Pat Sarai, Moradabad</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                     
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </section>-->
+<!-- addded by sumeet start gis -->
+<div id="map"></div>
+<!-- addded by sumeet end gis-->
+
+<section id="administrative" class="about-us">
+    <div class="col-12" style="padding-top:1rem;">
+        <div class="title text-center event">
+            <h2 style="font-size: large;">Administrative</h2>
+            <div class="border"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <div class="administrative">
+                <div class="administrative_place">
+                    <div class="administrativeimg">
+                        <img src="assets/images/DM-office.jpg" alt="">
+                    </div>
+                    <div class="administrative_info">
+                        <h5>DM Office</h5>
+                        <p style="color:#000;font-size:14px;">Address : Nawabpura Road, Moradabad, Uttar Pradesh</p>
+                        <a>
+                            <p class="date" style="color:#f4825b;"> </p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="administrative_place">
+                    <div class="administrativeimg">
+                        <img src="assets/images/police-supt.moradabad.jpg" alt="">
+                    </div>
+                    <div class="administrative_info">
+                        <h5>Supt. of Police</h5>
+                        <p style="color:#000;font-size:14px;">Address : RQX6+3C6, Railway Harthala Colony, Moradabad, Uttar Pradesh</p>
+                        <a href="#">
+                            <p class="date" style="color:#f4825b;"></p>
+
+                        </a>
+
+                    </div>
+                </div>
+                <div class="administrative_place">
+                    <div class="administrative_img">
+                        <img src="assets/images/mandaloffice.jpg" alt="">
+                    </div>
+                    <div class="administrative_info">
+                        <h5>Nagar Nigam Office</h5>
+                        <p style="color:#000;font-size:14px;">Address : Office of the Commissioner Moradabad Division,Utter Pradesh</p>
+                        <a href="#">
+                            <p class="date" style="color:#f4825b;"></p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="administrative_place">
+                    <div class="administrative_img">
+                        <img src="assets/images/ditrict-court-m.jpg" alt="">
+                    </div>
+                    <div class="administrative_info">
+                        <h5>District Court</h5>
+                        <p style="color:#000;font-size:14px;">Address : Main Rd, opp. SBI, Civil Lines, Moradabad, Uttar Pradesh </p>
+                        <a href="#">
+                            <p class="date" style="color:#f4825b;"></p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Start Counter Section -->
+<section class="counter-wrapper section-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="title">
+                    <h2 style="font-size: large;">TOURIST PLACE</h2>
+                    <div class="border"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-xs-6 thumb" style="position:relative;">
+                        <img class="img-thumbnail gal" src="assets/images/budhapark.jpg" alt="Another alt text">
+                        <div class="thumb-label">
+                            Gautam Budh Park Moradabad
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-6 thumb" style="position:relative;">
+                        <img class="img-thumbnail gal" src="assets/images/sai-temple-1.jpg" alt="Another alt text">
+                        <div class="thumb-label">
+                            Sai Temple MDA
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-6 thumb" style="position:relative;">
+                        <img class="img-thumbnail gal" src="assets/images/raja-lib-1.jpg" alt="Another alt text">
+                        <div class="thumb-label" style="width: 76%;">
+                            Raza Library Moradabad
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="uk-button uk-button-primary uk-margin-auto uk-margin-top" style="width: 250px;"><a routerLink="/touristPlace" style="color: #fff;">View All</a></button>
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</section>
+
+<!-- <section  class=" map-nav">
+    <div class="service-list-header">What's Near Me</div>
+    <div class="geo-portal">
+        <div class="left-map-nav scrolly">
+            <div class="service-list">
+                <ul>
+                    
+                    <li class="service-list-info ">
+                        <div class="location-header">
+                            <img src="assets/images/s3.png" alt="">
+                            <h6>Government hospitals</h6>
+                        </div>
+                        <div class="location-list">
+                            <div class="location-list">
+                                <a href="https://www.google.com/maps/dir/Moradabad,+Uttar+Pradesh/Pt.+Din+Dayal+Upahadhy,+District+Combined+Hospital,+RQX8%2B5FJ,+Civil+Lines,+Moradabad,+Uttar+Pradesh+244001/@28.8436388,78.7648972,16z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x390afbea2f5646c9:0xb8c97ce4e95398db!2m2!1d78.7733286!2d28.8386481!1m5!1m1!1s0x390afbe151cba3df:0xb9b3355cc0d5c64e!2m2!1d78.7661321!2d28.8479502" target="_blank">
+                                    Pt. Din Dayal Upahadhy, District Combined Hospital</a>
+                                <a href="https://www.google.com/maps/dir/Moradabad,+Uttar+Pradesh/Nagriya+Prathmik+Swast+Kendra,+Asim+Bihari+School+Rd,+mehbulla+ganj,+Katghar,+Moradabad,+Uttar+Pradesh+244001/@28.8304395,78.7680614,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x390afbea2f5646c9:0xb8c97ce4e95398db!2m2!1d78.7733286!2d28.8386481!1m5!1m1!1s0x390afbb1a22ad693:0x24971890dca74070!2m2!1d78.7856183!2d28.8236194" target="_blank">
+                                    Nagriya Prathmik Swast Kendra</a>
+                            </div>
+                        </div>
+                    </li>
+                   
+                    <li class="service-list-info">
+                        <div class="location-header">
+                            <img src="assets/images/s2.png" alt="">
+                            <h6>Fire Brigade Station</h6>
+                        </div>
+                        <div class="location-list">
+                            <a class="" href="https://ct226.nicelocal.in/uttar-pradesh/autoservice/nidhi_fire_service_pvt_ltd/" target="_blank">Nidhi Fire Service Pvt.Ltd</a>
+                            <a class="" href="https://www.justdial.com/Moradabad/Saini-Fire-Service-Near-Hanuman-Murti-Moradabad-HO/9999PX591-X591-150403133002-T5Y7_BZDET" target="_blank">Saini Fire Service  </a>
+
+                        </div>
+                    </li>
+                    <li class="service-list-info">
+                        <div class="location-header">
+                            <img src="assets/images/s1.png" alt="">
+                            <h6>Ambulance Services</h6>
+                        </div>
+                        <div class="location-list">
+                            <a class="" href="https://yellowpages.webindia123.com/d-t/Uttar-Pradesh/Moradabad/Balaji-Ambulace-Seva/27803/" target="_blank">Balaji Ambulance Seva</a>
+                            <a class="" href="https://www.justdial.com/Moradabad/Sanjeev-Thakur-Ambulance-Civil-Lines-Hospital-Civil-Lines/9999PX591-X591-110528100412-G1X8_BZDET" target="_blank">Sanjeev Thakur Ambulance</a>
+
+                        </div>
+                    </li>
+                    <li class="service-list-info">
+                        <div class="location-header">
+                            <img src="assets/images/s4.png" alt="">
+                            <h6>Police Stations</h6>
+                        </div>
+                        <div class="location-list">
+                            <a class="" href="https://placefinder.in/listing/katghar-police-station-moradabad/" target="_blank">Katghar Police Station</a>
+                            <a class="" href="https://placefinder.in/listing/pakwara-police-station-moradabad/" target="_blank">Pakwara Police Station</a>
+
+                        </div>
+                    </li>
+                    <li class="service-list-info">
+                        <div class="location-header">
+                            <img src="assets/images/s8.png" alt="">
+                            <h6>Hotels</h6>
+                        </div>
+                        <div class="location-list">
+                            <a class="" href="https://www.agoda.com/en-in/mansarover-paradise-hotel/hotel/moradabad-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1841706&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2021-12-16&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=882d8cba-c531-a4da-d733-c9c7572062d9&isCityHaveAsq=false&tspTypes=8,-1&los=1&searchrequestid=d4614514-de3d-4551-9d48-2a6a32739008" target="_blank">
+                                Mansarover Paradise Hotel</a>
+                            <a class="" href="https://www.agoda.com/en-in/mb-clarks-inn-moradabad/hotel/moradabad-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1891440&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2021-12-16&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=f4990586-d943-4dfe-dcf6-414b8e5e00e7&isCityHaveAsq=false&tspTypes=8&los=1&searchrequestid=985f52cc-c02e-4131-976d-3912cf463de7" target="_blank">
+                                MB Clarks Inn Moradabad</a>
+
+                        </div>
+                    </li>
+                    <li class="service-list-info">
+                        <div class="location-header">
+                            <img src="assets/images/s5.png" alt="">
+                            <h6>Public Toiletss</h6>
+                        </div>
+                        <div class="location-list">
+                            <a class="" href="#">SBM Toilet
+                            </a>
+                        </div>
+                    </li>
+                    <li class="service-list-info">
+                        <div class="location-header">
+                            <img src="assets/images/s7.png" alt="">
+                            <h6>Bus Stops</h6>
+                        </div>
+                        <div class="location-list">
+                            <a class="" href="https://www.justdial.com/Moradabad/Roadways-Bus-Stand-Gandhi-Nagar/9999PX591-X591-170928190357-X9D7_BZDET" target="_blank">
+                                Roadways Bus Stand</a>
+                        </div>
+                    </li>
+                    <li class="service-list-info">
+                        <div class="location-header">
+                            <img src="assets/images/s6.png" alt="">
+                            <h6>Taxi Stops</h6>
+                        </div>
+                        <div class="location-list">
+                            <a class="" href="http://radiotaximoradabad.com/" target="_blank">Radio Taxi</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-map-nav" id="map-view">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55917.654497662785!2d78.7325328635508!3d28.84322411157545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afbea2f5646c9%3A0xb8c97ce4e95398db!2sMoradabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1637491008125!5m2!1sen!2sin" width="1120" height="750" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+ </section>  -->

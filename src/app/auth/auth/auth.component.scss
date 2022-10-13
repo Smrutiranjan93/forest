@@ -1,0 +1,24 @@
+.login-section {
+	.form-group {
+		label {
+			color: #fff !important;
+			font-weight: 300;
+			font-size: 14px;
+		}
+		input {
+			color: rgb(255, 255, 255) !important;
+			background: transparent !important;
+			border: 1px solid #fff;
+			height: calc(1.5em + 0.75rem + -3px) !important;
+			border-radius: 3px !important;
+			&::placeholder {
+				color: rgba(255, 255, 255, 0.788) !important;
+			}
+		}
+	}
+	input[type='text'],
+	input[type='password'],
+	.btn {
+		border-radius: 0px;
+	}
+}

@@ -1,0 +1,130 @@
+#app-banner{
+    margin:10px 0;
+}
+ a#important-link{
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 700;
+}
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet');
+
+/* html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+} */
+
+body {
+  margin: 0!important;
+  width: 100%;
+  height: 1000px;
+  background-image: linear-gradient( 109.6deg,  rgba(17,151,147,1) 11.2%, rgba(154,214,212,1) 55.4%, rgba(255,233,171,1) 100.2% );
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title span{
+  font-family: 'Anton', 'sans-serif';
+  color: white;
+  text-shadow: 0 0 5px #333;
+  font-size: 46px;
+  letter-spacing: 2px;
+  border-bottom: 4px solid rgba(90,92,106,1);
+}
+
+.scroll {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 5px;
+  right: -80px;
+  border-radius: 100%;
+  //background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(167, 87, 23) 0%, rgb(168, 58, 31) 81.3% );
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, var(--blue) 0%, var(--purple) 81.3%);
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 5px 0px #888;
+  transition: 300ms;
+}
+
+.scroll i {
+  margin-top: 3px;
+  text-shadow: 0 0 2px #fff;
+}
+
+.scroll:hover i {
+  animation-name: rotate;
+  animation-duration: 300ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  from {margin-top: 15px}
+  to {margin-top: 5px}
+}
+
+.visible {
+  right: 80px;
+  transition: all 400ms;
+  transform: rotate(360deg)
+}
+
+.icon-bar {
+  position: fixed;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}

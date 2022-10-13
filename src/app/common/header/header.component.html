@@ -1,0 +1,256 @@
+<!-- <div class=>
+    <img src="\assets\images\team\mainhead.jpg" alt="">
+</div> -->
+
+<header class="navigation fixed-top" >
+    <div class="container-fluid">
+        <img src="\assets\images\team\mainhead1.jpg" alt="" style="height:140px ; width:100%">
+    </div>
+    <div class="container" >
+        
+        <nav class="navbar navbar-expand-lg navbar-light" style="margin-top: -32px;">
+            <!-- logo -->
+            <!-- <h1 class="uk-flex uk-flex-middle" style="margin-left:-60px;"><img src="assets/images/logo2.png" alt=""
+                    class="img-fluid"><a class="navbar-brand logo" href="./">ODISHA SILIVICULTURE<br>DEPARTMENT</a></h1> -->
+            <!-- /logo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="">Home</a>
+                    </li>
+                    <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" routerLink="/missionAndVision">Mission & Vission</a>
+                            <a class="dropdown-item" routerLink="/corporation">Corporation</a>
+                            <a class="dropdown-item" routerLink="/messageFromCmd">Message from Authority</a>
+                            <a class="dropdown-item" routerLink="/boardOfDir">Board of Director</a>
+                            <a class="dropdown-item" routerLink="/shareholding">Shareholding pattern</a>
+                            <a class="dropdown-item" routerLink="/organogram">Organogram</a>
+                            <a class="dropdown-item" routerLink="/key">Key Personnel</a>
+                        </div>  -->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" routerLink="/about">Organization</a>
+                            <a class="dropdown-item" routerLink="/masterPlan">Future Plan</a>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Activities</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" routerLink="/photos">TIMBER & FIREWOOD</a>
+                            <a class="dropdown-item" routerLink="/videos">KENDULEAF</a>
+                            <a class="dropdown-item" routerLink="/videos">BAMBOO</a>
+                            <a class="dropdown-item" routerLink="/videos">PLANTATION & LANDSCAPING</a>
+                            <a class="dropdown-item" routerLink="/videos">SITE CLEARANCE PROJECT</a>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" id="navbarDropdown" data-toggle="dropdown"
+                            (click)="showSubmenu=!showSubmenu" role="button" aria-haspopup="true" aria-expanded="false"
+                            style="color: #fff;margin-left: 10px;" uk-icon="triangle-right">OTHER ACTIVITIES</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            [ngClass]="showSubmenu?'newmenu':'mymenu'" style="left: 170px;
+                                top: 10px;color: #fff;">
+                            <a class="dropdown-item" target="_blank"
+                                href="https://crsorgi.gov.in/web/index.php/auth/signUp"
+                                data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">CANNING
+                                & FOOD PROCESSING</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="https://crsorgi.gov.in/web/index.php/auth/signUp"
+                                data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">RUBBER
+                                PLANTATION</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="https://tax.onlinemnn.com/SearchHouseDetailsF.aspx"
+                                data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">CASHEW
+                                PLANTATION</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="https://tax.onlinemnn.com/SearchHouseDetailsF.aspx"
+                                data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">SAW
+                                MILLS</a>
+                            <a class="dropdown-item" target="_blank" href="http://e-nagarsewaup.gov.in/ulbapps/p"
+                                data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">PARK</a>
+
+                        </div>
+
+                    </li>
+            </div>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">E-Tender</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" routerLink="/tenders">Tender</a>
+                            <a class="dropdown-item" routerLink="/notification">Notifications</a>
+                            
+                        </div>
+                    </li> -->
+            <!-- ---------------------------------------------- -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">E-Tender</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLink="/tender">Apply Tender</a>
+                            <!-- <a class="dropdown-item" routerLink="/videos">Video Gallery</a> -->
+                            <!-- <a class="dropdown-item" routerLink="/photos">Photos Gallery</a> -->
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link" id="navbarDropdown" data-toggle="dropdown" (click)="showSubmenu=!showSubmenu"
+                    role="button" aria-haspopup="true" aria-expanded="false" style="color: #fff;margin-left: 10px;"
+                    uk-icon="triangle-right">TIMBER</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" [ngClass]="showSubmenu?'newmenu':'mymenu'"
+                    style="left: 170px;
+                                top: 10px;color: #fff;">
+                    <a class="dropdown-item" target="_blank" href="https://crsorgi.gov.in/web/index.php/auth/signUp"
+                        data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">TIMBER FOR 
+                        AUCTION SALE</a>
+                    <a class="dropdown-item" target="_blank" href="https://crsorgi.gov.in/web/index.php/auth/signUp"
+                        data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">TIMBER AUCTION 
+                        SALE RESULT</a>
+                        
+                    <a class="dropdown-item" target="_blank" href="https://tax.onlinemnn.com/SearchHouseDetailsF.aspx"
+                        data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">TIMBER FOR
+                        E-TENDER SALE</a>
+                        
+                    <a class="dropdown-item" target="_blank" href="https://tax.onlinemnn.com/SearchHouseDetailsF.aspx"
+                        data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">TIMBER E-TENDER 
+                        SALE RESULT</a>
+                </div>
+
+            </li> -->
+            <!-- <a class="nav-link" id="navbarDropdown" data-toggle="dropdown" (click)="showSubmenu=!showSubmenu"
+                role="button" aria-haspopup="true" aria-expanded="false" style="color: #fff;margin-left: 10px;"
+                uk-icon="triangle-right">E-Services</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" [ngClass]="showSubmenu?'newmenu':'mymenu'"
+                style="left: 170px;
+                              top: 10px;color: #fff;">
+                <a class="dropdown-item" target="_blank" href="https://crsorgi.gov.in/web/index.php/auth/signUp"
+                    data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">Birth
+                    Certificate</a>
+                <a class="dropdown-item" target="_blank" href="https://crsorgi.gov.in/web/index.php/auth/signUp"
+                    data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">Death
+                    Certificate</a>
+                <a class="dropdown-item" target="_blank" href="https://tax.onlinemnn.com/SearchHouseDetailsF.aspx"
+                    data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">Pay
+                    House & Water Tax</a>
+                <a class="dropdown-item" target="_blank" href="https://tax.onlinemnn.com/SearchHouseDetailsF.aspx"
+                    data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">
+                    Electricity Bill</a>
+                <a class="dropdown-item" target="_blank" href="http://e-nagarsewaup.gov.in/ulbapps/p"
+                    data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">E-Nagar
+                    Seva</a>
+                <a class="dropdown-item" target="_blank" href="https://swachhbharatmission.gov.in/sbmcms/index.htm"
+                    data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">Swachh
+                    Bharat Mission</a>
+                <a class="dropdown-item" target="_blank"
+                    href="https://applydrivinglicence.org/?gclid=Cj0KCQjw-4SLBhCVARIsACrhWLVg6cYHKIt3n8n4pmatdU24Bxu10uHpHEqGB9nJWLVbF1iAJJvpoNoaAoHPEALw_wcB"
+                    data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">Licence–New
+                    And Renew</a>
+
+            </div> -->
+
+
+
+
+
+
+            <!-- <a class="dropdown-item" routerLink="/touristPlace">Tourist Locations</a>
+                            <a class="dropdown-item" routerLink="/culturalHistory">Cultural History</a> -->
+    </div>
+    </li>
+
+
+    <!-- ------------------------------------=--=---- -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Stock Availbility</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="roundtimber">Round Timber </a>
+            <a class="dropdown-item" routerLink="sawntimber">Sawn Timber </a>
+            <a class="dropdown-item" routerLink="roundtimber">Round Firewood </a>
+            <a class="dropdown-item" routerLink="areaBasedDevelopment">Sawn Firewood  </a>
+            <a class="dropdown-item" routerLink="areaBasedDevelopment">Poles & Baliies  </a>
+        </div>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Booking & Calendar</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/eventlist">Event Details</a>
+            <a class="dropdown-item" routerLink="/calendar">Bookings</a>
+        </div>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Carrier</a>
+        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+            <!-- <a class="dropdown-item" routerLink="/download">Plan Report</a>
+            <a class="dropdown-item" href="https://censusindia.gov.in/" target="_blank"
+                data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">Census</a>
+            <a class="dropdown-item" routerLink="/districtprofile">District Profile</a>
+            <a class="dropdown-item" routerLink="/statisticalreport">Statistical Report</a> -->
+        <!-- </div> -->
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/research">Research</a>
+    </li>
+    <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Division</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/download">Angul</a>
+            <a class="dropdown-item" href="https://censusindia.gov.in/" target="_blank"
+                data-confirm="You are being redirected to an external website. Please note that  Moradabad smartcity cannot be held responsible for external websites content & privacy policies.">Bhadrak</a>
+            <a class="dropdown-item" routerLink="/districtprofile">Balangir</a>
+            <a class="dropdown-item" routerLink="/statisticalreport">Cuttack</a>
+        </div>
+    </li> -->
+    <li class="nav-item" >
+        <a class="nav-link" routerLink="/photos">Photo&Gallery</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="">Grievance</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/contactUs">Contact</a>
+    </li>
+    <!-- <li class="nav-item">
+                        <a class="nav-link" routerLink="/contactUs">Contact Us</a>
+                    </li> -->
+
+    <!-- <li>
+                      <div id="smart-city">
+                        <button  role="button"
+                       
+                        style="background: #fff; border: 2px solid #3EB489	;  margin: 2px;">
+                            <div id="google_translate_element" style="margin-right: 15px; "></div>
+                        </button> &nbsp;
+                    </div>
+                    </li> -->
+    <!-- <li class="nav-item dropdown">
+                      <button class="nav-link dropdown-toggle"  id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/signIn" *ngIf="!isLoggedIn()"  
+                      style="background: #fff; border: 2px solid #3EB489; padding-left: 10px; margin-right: 10px;margin: 2px; width: 133px;">
+                      <span uk-icon="sign-in"></span>LOGIN</button>
+                      <a href="#"><button *ngIf="isLoggedIn()" (click)="logout()"><span uk-icon="sign-out">LOGOUT</span></button></a>
+                <a href="#"><button *ngIf="isLoggedIn()" (click)="logout()"><span uk-icon="refresh">UPDATE</span></button></a>
+                    
+                      <div class="dropdown-menu" ria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" routerLink="/signUp" *ngIf="!isLoggedIn()" ><span uk-icon="user"></span>Register Now</a>
+                      </div>
+                  </li> -->
+
+    </ul>
+    </div>
+
+
+    </nav>
+    <!-- main nav -->
+    </div>
+</header>

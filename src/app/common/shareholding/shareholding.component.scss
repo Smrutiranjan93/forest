@@ -1,0 +1,44 @@
+.innheadd{
+    font-size: 25px;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    }
+    .shareholdinglist{
+        list-style-type: disc;
+        font-family: 'Montserrat', sans-serif;
+        color: #848484;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .shareholdinglists{
+        list-style-type: decimal;
+        font-family: 'Montserrat', sans-serif;
+        color: #848484;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .innbanner  img{
+        height: 370px;
+        position: relative;
+        position: relative;
+        /* background-size: cover; */
+        background-position: bottom center;
+        /* background-attachment: fixed; */
+        background-attachment: initial;
+        background-size: 100% 100%;
+        width: 100%;
+        background: linear-gradient(to left, #76a2db, #f8e15b);
+    
+      }
+      .innbanner h2 {
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #273a4a70;
+          padding: 30px;
+          border-radius: 20px;
+      }

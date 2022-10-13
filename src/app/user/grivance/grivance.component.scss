@@ -1,0 +1,75 @@
+.grievance-wrapper{
+    background-color:#f8f9fb;
+    width: 100%;
+    padding:1.5rem;
+    box-sizing: border-box;
+    border:0.5px solid #E5E5E5;
+}
+.complaint-form{
+    max-width:780px;
+    margin: 0 auto;
+}
+.grievance-input{
+    display: inline-grid;
+}
+.grievance-input label{
+    margin: 10px;
+}
+.grievance-input input, .grievance-input select, .grievance-input textarea{
+    box-sizing: border-box;
+    width: 350px;
+    height: 40px;
+    padding:5px 10px;
+    background-color: #ffffff;
+    // border: 1px solid #e5e5e5;
+    margin: 10px;
+}
+.grievance-input textarea{
+    min-height: 100px;
+    width:720px;
+}
+.grievance-input input#complaint-image{
+    width: 720px;
+    padding: 5px 15px;
+    background: #E5E5E5;
+    border: 1px solid #84848454;
+    background-image: url(/assets/images/camera.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.grievance-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#complaint-submit{
+    background-color:#f4824b;
+    color:#fff;
+    border: 1px solid #e5e5e5;
+}
+.invalid-feedback {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.25rem;
+    margin-left: 1rem;
+    font-size: 80%;
+    color: #DC3545;
+}
+@media (max-width:430px){
+    .grievance-wrapper{
+        padding:1rem 0;
+    }
+    .grievance-input{
+        display:grid;
+    }
+    .grievance-input input, .grievance-input select{
+        width:auto;
+    }
+    .grievance-input textarea{
+        width:auto;
+    }
+    .grievance-input input#complaint-image{
+        width:auto;
+    }
+}

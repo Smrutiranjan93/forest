@@ -1,0 +1,102 @@
+.topimage{
+    height: 80px;
+}
+.panel-heading.afterLoginPanelHeading {
+    // background-color: rgb(243, 116, 53);
+    background: linear-gradient(to left, #f8ce25, #f45200);
+    padding: 12px 10px !important;
+    color: #fff;
+    font-size: 20px;  
+    height: 50px;
+}
+.uk-position-relative{
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15%;
+}
+
+.col-sm-4{
+    padding: 30px;
+}
+.col-sm-3{
+    padding: 30px;
+}
+.serice-item-list { 
+    border: 1px solid hsla(0,0%,85.9%,.64); 
+    padding: 10px 30px 60px 30px;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg,#f9f9f9 75%,#f9f9f9);
+    box-shadow: 0 0 9px 0 rgb(0 0 0 / 35%);
+}
+.info-box{
+    font-weight: bold;
+    color: #f1590b;
+    font-size: 18px;
+}
+.medicalservice li{
+    list-style: disc;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+}
+.medicalservicelist{
+    padding-top: 30px;
+}
+.uk-card{
+    border-radius: 20px;
+}
+.medicalsericecard{
+    height: 160px;
+    background: linear-gradient(to left, #f8ce25, #f45200);
+}
+.uk-card-title{
+    font-size: 16px;
+    color: #f1590b;
+
+}
+.uk-card-titles{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.headname{
+    color: blue;
+    font-size: 20px;
+    padding-top: 20px;    
+}
+hr {
+   
+    border: 0;
+    
+}
+.imge{
+    margin-left: 80px;
+    color: oldlace;
+    text-align: -webkit-center;
+}
+
+
+.innbanner  img{
+    height: 370px;
+    position: relative;
+    position: relative;
+    /* background-size: cover; */
+    background-position: bottom center;
+    /* background-attachment: fixed; */
+    background-attachment: initial;
+    background-size: 100% 100%;
+    width: 100%;
+    background: linear-gradient(to left, #76a2db, #f8e15b);
+
+  }
+  .innbanner h2 {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #273a4a70;
+      padding: 30px;
+      border-radius: 20px;
+  }
