@@ -1,13 +1,342 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Forest</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head class="notranslate ">
+    <meta charset="utf-8">
+    <title>OSDC</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>OSDC</title>
+    <link rel="stylesheet" href="assets/css/uikit.min.css" />
+    <!-- Mobile Specific Meta -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo2.png">
+    <!-- CSS -->
+    <!-- Themefisher Icon font -->
+    <link rel="stylesheet" href="assets/plugins/themefisher-font/style.css">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Lightbox.min css -->
+    <link rel="stylesheet" href="assets/plugins/lightbox2/dist/css/lightbox.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="assets/plugins/animate/animate.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <!-- Google Fonts -->
+    <!-- MDB -->
+
+
+
+
+
+
+
+    <!-- -------------------------------------------------------------- -->
+
+    <!-- <link href="https://www.odishafdc.com/css/bootstrap.css" rel="stylesheet">
+<link href="https://www.odishafdc.com/css/font-awesome.css" rel="stylesheet">
+<link href="https://www.odishafdc.com/fonts/flaticon.css" rel="stylesheet">
+<link href="https://www.odishafdc.com/css/style.css" rel="stylesheet">
+<link href="https://www.odishafdc.com/css/color.css" rel="stylesheet">
+<link href="https://www.odishafdc.com/css/extralayers.css" rel="stylesheet" media="screen" />
+<link href="https://www.odishafdc.com/css/settings.css" rel="stylesheet" media="screen" />
+<link href="https://www.odishafdc.com/css/responsive.css" rel="stylesheet">
+<link href="https://www.odishafdc.com/css/lc_lightbox.css" rel="stylesheet">
+<link href="https://www.odishafdc.com/css/minimal.css" rel="stylesheet"> -->
+    <!-- ---------------------------------------------------------------------- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<!-- <body id="body">
+    !-- start preloader animation --
+        <div id="preloader">
+        <div class='preloader'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div> -->
+    <!--End Preloader --
+
+    <div class="root">
+        !-- render header, footer and page contents here -->
+        
+        <!-- -----------------------------------header--------------------------- -->
+        
+    
+    <!-- -------------------- other scripts ---------------------- -->
+    <!-- Essential Scripts-->
+    <!-- Main jQuery -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="assets/plugins/google-map/gmap.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script> -->
+    <!-- Form Validation -->
+    <script src="assets/plugins/form-validation/jquery.form.js"></script>
+    <script src="assets/plugins/form-validation/jquery.validate.min.js"></script>
+    <!-- Bootstrap4 -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Parallax -->
+    <script src="assets/plugins/parallax/jquery.parallax-1.1.3.js"></script>
+    <!-- lightbox -->
+    <script src="assets/plugins/lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="assets/plugins/smooth-scroll/smooth-scroll.min.js"></script>
+    <!-- Custom js -->
+    <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easy-ticker.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var myET = $('.myTicker, .myTicker2, .myTicker3').easyTicker({
+                direction: 'up',
+                easing: 'swing',
+                speed: 'slow',
+                interval: 2500,
+                height: 'auto',
+                visible: 0,
+                mousePause: true,
+                controls: {
+                    up: '.up',
+                    down: '.down',
+                    toggle: '.toggle',
+                    stopText: 'Stop !!!'
+                },
+                callbacks: {
+                    before: function (ul, li) {
+                        console.log(this, ul, li);
+                        $(li).css('color', '#c74f0a');
+                    },
+                    after: function (ul, li) {
+                        console.log(this, ul, li);
+                    }
+                }
+            }).data('easyTicker');
+
+            cc = 1;
+            $('.add').click(function () {
+                $('.myTicker ul, .myTicker2 ul, .myTicker3 ul').append('<li>' + cc + ' Triangles can be made easily using CSS also without any images. This trick requires only div tags and some</li>');
+                cc++;
+            });
+
+            $('.visible-3').click(function () {
+                myET.options['visible'] = 3;
+
+            });
+
+            $('.visible-all').click(function () {
+                myET.stop();
+                myET.options['visible'] = 0;
+                myET.start();
+            });
+
+        });
+    </script>
+     <!-- <script>
+        var weather = document.getElementById('weather');
+        var right = document.getElementById('right');
+
+        right.addEventListener("click", function () {
+            weather.classList.toggle('active')
+        });
+    </script> -->
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/uikit-icons.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    var currFFZoom = 1;
+    var currIEZoom = 100;
+    function plus(){
+        //alert('sad');
+        var step = 0.02;
+        currFFZoom += step;
+        $('body').css('MozTransform','scale(' + currFFZoom + ')');
+        var stepie = 2;
+        currIEZoom += stepie;
+        $('body').css('zoom', ' ' + currIEZoom + '%');
+    };
+    function minus(){
+        //alert('sad');
+        var step = 0.02;
+        currFFZoom -= step;
+        $('body').css('MozTransform','scale(' + currFFZoom + ')');
+        var stepie = 2;
+        currIEZoom -= stepie;
+        $('body').css('zoom', ' ' + currIEZoom + '%');
+    };
+    function normal(){
+        var step = 1;
+        currFFZoom = step;
+        $('body').css('MozTransform','scale(' + currFFZoom + ')');
+        var stepie = 100;
+        console.log(currIEZoom);
+        currIEZoom = stepie;
+        $('body').css('zoom', ' ' + currIEZoom + '%');
+    };
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer=""></script>    
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: "en,hi",
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            },
+            'google_translate_element');
+        }
+    </script>
+    
+    <script>
+        $(document).on('click', ':not(form)[data-confirm]', function(e){
+        if(!confirm($(this).data('confirm'))){
+          e.stopImmediatePropagation();
+          e.preventDefault();
+            }
+    });
+    </script>
+<script src="assets/js/mapview.js"></script>
+<script>
+ window.addEventListener('scroll', e => {
+    var el = document.getElementById('jsScroll');
+    if(window.scrollY > 200) {
+      el.classList.add('visible');
+    } else {
+      el.classList.remove('visible');
+    }
+  });
+  
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+  </script>
+<script>
+history.scrollRestoration = "manual";
+
+$(window).on('beforeunload', function(){
+      $(window).scrollTop(0);
+});
+
+</script>
+
+<script>
+    let image = document.getElementById ('image');
+    let images= ['slide1.jpg', 'slide3.jpg']
+    setInterval(function(){
+        let random = Math.floor(Math.random()*2);
+    }, 800)
+</script>
+
+
+<script>
+    var currFFZoom = 1;
+    var currIEZoom = 100;
+    function plus(){
+        //alert('sad');
+        var step = 0.02;
+        currFFZoom += step;
+        $('body').css('MozTransform','scale(' + currFFZoom + ')');
+        var stepie = 2;
+        currIEZoom += stepie;
+        $('body').css('zoom', ' ' + currIEZoom + '%');
+    };
+    function minus(){
+        //alert('sad');
+        var step = 0.02;
+        currFFZoom -= step;
+        $('body').css('MozTransform','scale(' + currFFZoom + ')');
+        var stepie = 2;
+        currIEZoom -= stepie;
+        $('body').css('zoom', ' ' + currIEZoom + '%');
+    };
+    function normal(){
+        var step = 1;
+        currFFZoom = step;
+        $('body').css('MozTransform','scale(' + currFFZoom + ')');
+        var stepie = 100;
+        console.log(currIEZoom);
+        currIEZoom = stepie;
+        $('body').css('zoom', ' ' + currIEZoom + '%');
+    };
+    </script>
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61c034b380b2296cfdd286ad/1fnbcrogh';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    
+
+
+      
+	  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['', '', '','',''],
+            ['12pm Sat', 100,98,55,56],
+            ['11pm Sat', 91,81,71,50],
+            ['10pm Sat', 80,82,78,70],
+            ['9am Sat', 1,1,1,1],
+            ['8am Sat', 1,1,1,1],
+            ['7am Sat', 1,1,1,1]
+  
+          ]);
+  
+          var options = {
+           
+            colors : ['#FF8C00','#FFFF00','#32CD32','#FF0000'],
+            bars: 'vertical', // Required for Material Bar Charts.
+            responsive: true,
+            legend: false
+      
+          };
+  
+          var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+          chart.draw(data, google.charts.Bar.convertOptions(options));
+          var chart = new google.charts.Bar(document.getElementById('barchart_material1'));
+          chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+      </script>
+  
+
 </head>
 <body>
-  <app-root></app-root>
+    <app-root></app-root>
 </body>
+
 </html>

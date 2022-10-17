@@ -1,0 +1,215 @@
+
+<section class="uk-section-small" style="margin-top: 180px ;background-color: lavender;">
+    <div class="container" id="page-content-wrapper">
+
+        <div class="container-fluid" style="margin-bottom: 5%;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 style="text-align: right;color: slateblue;margin-right: 6%;"></h5>
+                    <button class="btnn btn-primary"  routerLink="/signIn" style="float: right; margin-right: 100px;">Logout</button>
+                    <h5 style=" text-align: left;float:left;margin-left: 30px; margin-top:20px;font-weight: 900;color: teal;">Complaint View</h5>
+                    <div id="example_wrapper" class="dataTables_wrapper">
+                   
+                           <div class="table-responsive">
+                                <form  >
+                               <div class="row">
+                                   
+                                   <div class="col-md-3 status">
+                                <label>Status &nbsp;&nbsp;&nbsp;</label>
+                                    <select class="form-control"   formControlName="status">
+                                    <option value='' [disabled]="true" selected hidden>Select Status
+                                   </option>
+                                  <option value='RECEIVED'> Received</option>
+                                <option value='Inprogress'>Inprogress</option>
+                                <option value='RESOLVED'>Resolved</option>
+                            <option value='Sendback'>Sendback</option>
+                           </select>
+                                   </div>
+                                   <div class="col-md-3 status">
+                                       <label><b>Date:</b>&nbsp;&nbsp;From &nbsp;&nbsp;&nbsp;</label>
+                                       <input type="date" class="form-control" formControlName="fromDate">
+                                   </div>
+                                   <div class="col-md-3 status">
+                                       <label>To &nbsp;&nbsp;&nbsp;</label>
+                                       <input type="date" class="form-control" formControlName="toDate">
+                                   </div>
+                                   <div class="col-md-3 status" style="margin:auto;max-width:300px;margin-top: 1px;">
+                                       <button type="submit" style="background-color: slateblue;color: #fff;padding: 4px;">Search</button>
+                                   </div>
+                               
+                               </div>
+                           </form>  
+                           <input type="text"  autocomplete="off" style="border: 2px solid rebeccapurple;float: right;"><br><br><br>
+                               <table class="table table-striped table-hover table-bordered center  no-footer"
+                                   style="width: 100%;" role="grid">
+                                   <thead>
+                                   <tr role="row">
+                                   <th>Complaint No.
+                                  </th>
+                                   <th>Name</th>
+                                   <!-- <th>Email</th> -->
+                                    <th>Phone</th>
+                                    <th>Address</th>
+                                    <th>ComplaintDate</th>
+                                   <th>Complaint Status</th>
+                                    <th>Complaint Details</th>
+                                    <!-- <th>Resolved By</th>-->
+                                    <th>Resolution</th> 
+                                    <th>Action</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <!-- <tr role="row" class="odd"  *ngFor="let datas of complaintList | paginate: { itemsPerPage: 5, currentPage: p }| filter:searchText"> -->
+                                           <!-- <td>{{datas.complaintNo}}</td>
+                                           <td class="sorting_1">{{datas.name}}</td> -->
+                                           <!-- <td>{{datas.email}}</td> -->
+                                           <!-- <td>{{datas.mobileNo}}</td>
+                                           <td>{{datas.street}}</td>
+                                           <td>{{datas.startDate}}</td>
+                                           <td>{{datas.status}}</td>
+                                           <td>Complaint number {{datas.complaintNo}} has been registered without disposal.</td> -->
+                                           <!-- <td>Developer</td>-->
+                                           <!-- <td>{{datas.remarks}}</td>  -->
+                                           <td>
+                                               <a class="btnn btn-social-icon btn-primary"
+                                                   style="background-color: slateblue;color: #fff;" data-toggle="modal"
+                                                   data-target="#myModal">
+                                                   View</a>
+                                               <!-- Modal -->
+                                               <div id="myModal" class="modal" role="dialog">
+                                                   <div class="modal-dialog modal-lg">
+           
+                                                       <!-- Modal content-->
+                                                       <div class="modal-content">
+                                                           <div class="modal-header">
+                                                               <button type="button" #closebutton  class="close"
+                                                                   data-dismiss="modal">&times;</button>
+                                                           </div>
+                                                           <div class="modal-body">
+                                                               
+                                                                   <div class="row">
+                                                                       <div class="col-md-6">
+                                                                        <label for="Complaintcategogy">Complaint Category</label>
+                                                                        <select class="form-control" 
+                                                                       >
+                                                                           <option  [disabled]="true" value= selected >-- Select Complaint Category --</option>
+                                                                           <option ></option>
+                                                                           
+                                                                          
+                                                                        </select>
+                                                                               <label for="">Name</label>
+                                                                               <input type="text" class="form-control">
+                                                                               <label for="">House No.</label>
+                                                                               <input type="text" class="form-control" >
+                                                                               <label for="">Street</label>
+                                                                               <input type="text" class="form-control" >
+                                                                               <label for="">Mobile No.</label>
+                                                                               <input type="text" class="form-control" >
+                                                                               <label for="">Date</label>
+                                                                               <input type="date" class="form-control" >
+                                                                               
+                                                                        <div class="form-check">
+                                                                            <input type="checkbox" class="form-check-input" id="check1" name="option1" 
+                                                                             value="something" checked>
+                                                                            <label class="form-check-label" for="check1" >false complaint</label>
+                                                                            <div class=""  style="margin-left: -15px;">
+                                                                            <label for="">Description</label>
+                                                                            <textarea class="form-control"
+                                                                           ></textarea>
+                                                                            <!-- <div *ngIf="upd_ValidComplaint&&!upd_remarks" class="invalid-feedback">
+                                                                               <div >Descriptions is required</div>
+                                                                           </div> -->
+                                                                            </div>
+                                                                          </div>
+                                                                          <!-- <button  type="checkbox" >View Uploaded Image</button>
+                                                                          <div *ngIf="isShown" class="row container-fluid"  id="divshow" >
+                                                                            <div>
+                                                                                <img src="{{datas.fileUrl}}" *ngIf="imageSrc" [(ngModel)]="this.upd_Fileurl" style="height: 100px; width:500px">
+                                                                          </div>
+                                                                          
+                                                                       </div> -->
+                                                                       <br>
+                                                                        <div>
+                                                                            <label for="">Citizen Uploaded Image :</label><br>
+                                                                            <!-- <a type="button"
+                                                                            (click)="show()">
+                                                                            click to show/hide Image
+                                                                        </a><a (click)="downloadImage(imageSrc)"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                                                             <img *ngIf="isShow" [src]="imageSrc" style="height: 100px; width:300px"> -->
+                                                                             <img style="height: 100px; width:300px">
+                                                                        </div>
+
+                                                                          <br>
+                                                                          
+                                                                        <!-- <img [src]="imageSrc" *ngIf="imageSrc"  style="height: 100px; width:300px">  -->
+                                                                       </div>
+                                                                       <div class="col-md-6">
+                                                                        <label for="Complaint">Complaint</label>
+                                                                        <select class="form-control" >
+                                                                           <option  [disabled]="true" value= selected >-- Select Complaint --</option>
+                                                                           <option> </option> 
+                                                                        </select>
+                                                                        <label for="">Select Area</label>
+                                                                        <select class="form-control" 
+                                                                        >
+                                                                           
+                                                                           <option  [disabled]="true" value= selected >-- Select Area --</option>
+                                                                           
+                                                                        </select>
+                                                                        <label for="">Ward Name</label>
+                                                                        <input type="text" class="form-control"  required>
+                                                                        <label for="">Zone Name</label>
+                                                                        <input type="text" class="form-control" >
+                                                                        <label for="">Officer Name</label>
+                                                                        <input type="text" class="form-control"  >
+                                                                        <label for="">Officer Mn.</label>
+                                                                        <input type="text" class="form-control" >
+                                                                        <label for="">Complete Duration(in days)</label>
+                                                                        <input type="text" class="form-control" >
+                                                                        <label for="">Complaint Details</label>
+                                                                        <textarea class="form-control"  ></textarea><br>
+                                                                        <div>
+                                                                            <label for="">Officer Uploaded Image :</label><br>
+                                                                            
+                                                                            <!-- click to show/hide Image -->
+                                                                       
+                                                                            <img   style="height: 100px; width:300px">
+                                                                        </div>
+                                                                        <br>
+                                                                        <!-- <button *ngIf="showResolved" type="button" class="btnn btn-default" (click)="Resolved()">Resolved</button>-->
+                                                                        
+                                                                         
+                                                                      </div>
+                                                                       <!-- <button *ngIf="showSendBack" type="button" class="btnn btn-default" (click)="sendBack()">SendBack</button>   -->
+                                                                       <div class="row">
+                                                                        <div class="col-md-12" style="text-align: center;">
+                                                                            <button  type="button" class="btnn btn-default" >Assign</button>
+                                                                   
+                                                               <button type="button" class="btnn btn-default"
+                                                               data-dismiss="modal">Cancel</button>
+                                                                        </div>
+                                                                     </div>
+                                                                   </div>
+                                                           
+                                                              
+                                                           </div>
+                                                       </div>
+           
+                                                   </div>
+                                               
+                                              
+                                        
+                                    
+                                   
+                               
+                               <div style="text-align: center;font-size: large;font-weight: 600;">No data Available</div>
+                           
+                       
+            
+        
+
+            <!-- <h4 style="text-align: right;float:right;margin-right: 20px; margin-top:20px;color: slateblue;">Welcome Operator!</h4> -->
+           
+            
+        
+    

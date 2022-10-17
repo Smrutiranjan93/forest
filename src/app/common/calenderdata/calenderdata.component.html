@@ -1,0 +1,113 @@
+<section class="innbanner">
+  <img src="assets/images/upcomingevents.png">
+    <h2 id="backdrop">Calendar Events</h2>
+  </section>
+  <section>
+    <div class="container-fluid uk-position-relative panel-heading">
+      <div style="background-color: #f4824b;padding:30px;margin-top:20px;margin-bottom:20px;">
+        <div class="row">
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder="Search event">
+          </div>
+          <div class="col-sm-3">
+  
+            <select name="role" class="custom-select">
+              <option selected>Popular Events</option>
+              <option value="user">Latest Events</option>
+              <option value="user">Closed</option>
+              <option value="user">Ongoing Events</option>
+              <option value="user">Category of Events</option>
+              <option value="user">Closest</option>
+              <option value="user">Upcoming</option>
+            </select>
+  
+          </div>
+          <!-- <div class="col-sm-2">
+            <a routerLink="/eventlist">
+            <div class="eventsearch">Search</div>
+            </a>
+          </div> -->
+          
+          <div class="col-sm-2">
+            <a routerLink="/calenderdata">
+              <div class="eventsearch">Calendar View</div>
+        </a>
+          </div>
+        </div>
+        <a style="color: #fff;margin-left: 15%;" (click)="detailStatus()"> Advance Search</a>
+        <div class="row" *ngIf="isShow">
+          <div class="col-md-2">
+            <label>Event Location</label><br>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label>Event Start Date</label><br>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label>Event End Date</label><br>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label>Volunteering</label><br>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline1">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">No</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <label>Event Sponsor Name</label><br>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label>Event Organizer Name</label><br>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="eventTabContainer">
+        <div class="region region-content">
+          <div id="block-system-main" class="block block-system">
+            <div class="content">
+              <div class="node node-event-calendar node-full clearfix">
+                <div class="content clearfix">
+                  <div class="content-tab">
+                    <div class="content-value">
+                      <div class="row">
+                          
+                          <p class="datashow">No records available</p>
+                      <div class="container calenderevent">
+                        <div class="row">
+                            <label class="calenderdatalevel">Event Start Date</label>
+                            <input type="date" class="form-control ">
+                            <label style="color: #f4824b;font-size: 12px;">Date E.g., 19/11/2021</label><br><br>
+                            <label class="calenderdatalevel">Event End Date</label>
+                            <input type="date" class="form-control">
+                            <label style="color: #f4824b;font-size: 12px;">Date E.g., 19/11/2021</label><br><br>
+                            
+                                <div class="col-sm-1">
+                                    <button type="button" class="btns btn-outline-dark">Submit</button>
+                                </div>
+                                <div class="col-sm-1">
+                                <button type="button" class="btns btn-outline-dark">Reset</button>
+                            </div>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>

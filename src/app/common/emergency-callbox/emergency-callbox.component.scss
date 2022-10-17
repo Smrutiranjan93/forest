@@ -1,0 +1,111 @@
+
+            #emergency-callbox{
+                margin:3rem 0;
+            }
+            .diagram-img{
+                height: auto;
+            }
+            .callbox{
+                max-width:750px;
+                margin:0 auto;
+                padding:10px;
+                background-color: #f8f9fa;
+            }
+            .callbox-header{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin:2rem 0;
+            }
+            .callbox-icon img{
+                width:100px;
+                height:100px;
+                border-radius:50%;
+            }
+            .callbox-title h2{
+                margin: 1rem auto;
+            }
+            .callbox-info{
+                width:100%;
+            }
+            .call-service{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #f3f4f5;
+                margin-bottom: 10px;
+            }
+            .call-service-icon{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height:65px;
+            }
+            .call-service-icon img{
+                height:65px;
+                width:65px;
+                padding:5px;
+            }
+            .call-service-icon h6{
+                margin: 0 0 0 1rem;
+                line-height:1rem;
+                font-weight: normal;
+            }
+            .call-service-info{
+                width: 200px;
+            }
+            .call-service-info p{
+                margin:10px;
+                font-size:16px;
+                color:#f4824b;
+                text-align: left;
+            }
+            @media (max-width:430px){
+                .callbox-container{
+                    padding: 0;
+                }
+                .call-service{
+                    justify-content: start;
+                    align-items: baseline;
+                    flex-direction: column;
+                }
+                .call-service-icon{
+                    height:auto;
+                }
+                .call-service-icon img{
+                    height:45px;
+                    width:45px;
+                    padding:5px;
+                }
+                .call-service-info{
+                    width:auto;
+                }
+                .call-service-info p{
+                    padding-left: 50px;
+                }
+            }
+        
+            .innbanner  img{
+                height: 370px;
+                position: relative;
+                position: relative;
+                /* background-size: cover; */
+                background-position: bottom center;
+                /* background-attachment: fixed; */
+                background-attachment: initial;
+                background-size: 100% 100%;
+                width: 100%;
+                background: linear-gradient(to left, #76a2db, #f8e15b);
+            
+              }
+              .innbanner h2 {
+                color: #fff;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                background-color: #273a4a70;
+                  padding: 30px;
+                  border-radius: 20px;
+              }

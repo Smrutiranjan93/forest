@@ -1,0 +1,70 @@
+#tourist-place {
+    margin: 2rem 0;
+}
+.how_to_reach{
+    padding: 0 15px;
+}
+.how_to_reach h4{
+    color: #f4825b;
+    font-weight: 400;
+}
+.row.travel-medium{
+    align-items: baseline;
+}
+.diagram-img {
+    height: auto;
+}
+.travel_medium{
+    width: 100%;
+    height:auto;
+    margin-left: 10px;
+}
+.medium{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-bottom:15px;
+}
+
+.travel_medium_icon span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #f4824b;
+    border-radius: 50%;
+    /* font-size: 3em; */
+    text-align: center;
+    /* line-height: 60px; */
+    /* color: #ffffff; */
+}
+.icon-aeroplane:before {
+    content: "\e98f";
+}
+.travel_medium_text{
+    width: 90%;
+    padding-left:10px;
+    margin-left: 10px;
+}
+.travel_medium_text p{
+    color: black;
+    font-size: 13px;
+}
+.row.travel_gallery{
+    padding:10px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
+}
+
+@media (max-width:430px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .travel_medium{
+        margin: 0;
+    }
+    .row.travel_gallery{
+        margin-bottom: 1rem;
+    }
+}

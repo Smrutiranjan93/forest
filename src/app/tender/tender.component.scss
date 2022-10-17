@@ -1,0 +1,173 @@
+
+// .contact {
+//     position: relative;
+//     width: 100%;
+//     padding: 45px 0;
+// }
+
+// .contact .col-md-6 {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+// }
+
+// .contact .col-md-6:first-child {
+//     background: #030f27;
+   
+
+
+// }
+
+// .contact .col-md-6:last-child {
+//     background: #030f27;
+//     color: #fdbe33;
+   
+
+// }
+
+// .contact .contact-info {
+//     position: relative;
+//     width: 100%;
+//     padding: 0 15px;
+// }
+
+// .contact .contact-item {
+//     position: relative;
+//     margin-bottom: 30px;
+//     padding: 30px;
+//     display: flex;
+//     align-items: flex-start;
+//     flex-direction: row;
+//     border: 1px solid rgba(256, 256, 256, .2);
+// }
+
+// .contact .contact-item [class^="flaticon-"]::before {
+//     margin: 0;
+//     color: #fdbe33;
+//     font-size: 40px;
+// }
+
+// .contact .contact-text {
+//     position: relative;
+//     width: auto;
+//     padding-left: 20px;
+// }
+
+// .contact .contact-text h2 {
+//     color: #fdbe33;
+//     font-size: 20px;
+//     font-weight: 600;
+// }
+
+// .contact .contact-text p {
+//     margin: 0;
+//     color: #ffffff;
+//     font-size: 16px;
+// }
+
+// .contact .contact-item:last-child {
+//     margin-bottom: 0;
+// }
+
+// .contact .contact-form {
+//     position: relative;
+//     padding: 0 15px;
+// }
+
+// .contact .contact-form input {
+//     color: #ffffff;
+//     height: 40px;
+//     border-radius: 0;
+//     border-width: 1px;
+//     border-color: rgba(256, 256, 256, .4);
+//     background: transparent;
+// }
+
+// .contact .contact-form textarea {
+//     color: #ffffff;
+//     height: 195px;
+//     border-radius: 0;
+//     border-width: 1px;
+//     border-color: rgba(256, 256, 256, .4);
+//     background: transparent;
+// }
+
+// .contact .contact-form input:focus,
+// .contact .contact-form textarea {
+//     box-shadow: none;
+// }
+
+// .contact .contact-form .form-control::placeholder {
+//   color: #fdbe33;
+//   opacity: 1;
+// }
+
+// .contact .contact-form .form-control::-ms-input-placeholder {
+//   color: #ffffff;
+// }
+
+// .contact .contact-form .form-control::-ms-input-placeholder {
+//   color: #fdbe33;
+// }
+
+// .contact .contact-form .btn {
+//     padding: 16px 30px;
+//     font-size: 20px;
+//     font-weight: 600;
+//     color: #fdbe33;
+//     background:  #030f27;
+//     border: none;
+//     border: 1px solid #fdbe33;
+//     border-radius:  20px ;
+//     transition: .3s;
+// }
+
+// .contact .contact-form .btn:hover {
+//     color: #030f27;
+//     background: #ffffff;
+// }
+
+// .contact .help-block ul {
+//     margin: 0;
+//     padding: 0;
+//     list-style-type: none;
+// }
+
+.main{
+    // background-color: rgb(239, 166, 83);
+    // background-color: rgb(242, 235, 227);
+    font-size: large;
+    font-weight: bold;
+    // background-image: url("\assets\images\team\grass.jpg");
+    background-image: url("/assets/images/team/grass.jpg");
+}
+.button1{
+    // background-color: navy;
+    padding: 10px 30px;
+    margin-left: 50px ;
+    text-align: center;
+}
+input[type]{
+    // width: 80%;
+    border:1px solid #0949fa;
+}
+form{
+    background-color: #90ec3a
+    ;
+    padding: 30px;
+
+    background: linear-gradient(to left, #afdb76, #f8e15b);
+
+}
+.innbanner  img{
+    height: 370px;
+    position: relative;
+    position: relative;
+    /* background-size: cover; */
+    background-position: bottom center;
+    /* background-attachment: fixed; */
+    background-attachment: initial;
+    background-size: 100% 100%;
+    width: 100%;
+    background: linear-gradient(to left, #76a2db, #f8e15b);
+
+  }

@@ -1,0 +1,18 @@
+.uk-slider-items.events.uk-grid {
+    flex-wrap: wrap;
+}
+
+.uk-card-default.event-card {
+    height:100%;
+    margin: 1rem 0;
+    border: 1px solid #f4824b2e;
+}
+
+.title.event {
+    padding: 0;
+}
+@media (max-width:430px){
+    .uk-card-body.event{
+        padding: 30px 15px;
+    }
+}

@@ -1,0 +1,168 @@
+.advancesearch{
+    font-size: 12px;
+    margin-left: 13%;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #fff;
+    background-color: #f4824b;
+}
+.view-empty p{
+    margin: 0;
+    padding: 7px 10px;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    background-color: #f4824b;
+}
+.slideBtn {
+    backface-visibility: hidden;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    display: inline-block;
+    position: relative;
+}
+.viewAll{
+    text-align: center;
+    margin-top: 20px;
+}
+.viewAllBtn {
+    display: inline-block;
+    padding: 8px 22px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #f4824b;
+}
+.viewAllBtn:hover{
+    color: #fff;
+    background-color: #f4824b;
+}
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+.searchEvent{
+    width: 240px;
+    float: left;
+    margin-right: 20px;
+    padding: 0;
+    position: relative;
+}
+
+.menu{
+    padding: 20px;
+    box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width:200px;
+    margin-top: 30px;
+    margin-left: 50px;
+    }
+     .sidebar {
+        width: 25%;
+        float: right;
+        padding-left: 30px;
+    }
+    .sidebar .searchbar {
+        background-color: #fcfcfc;
+        border: 1px solid #ddd;
+        padding: 20px;
+    }
+    .searchbar {
+        padding: 30px 0;
+        background-color: #d49630;
+    }
+.calenderevent{
+    padding: 30px;
+    border: 1px solid #ddd;
+    width: 20%;
+    margin-bottom: 30px;
+    height: 350px;
+    float: right;
+    margin-right: 20%;
+    background: #fcfcfc;
+}
+.calenderdatainput{
+    padding: 0px;
+}
+.calenderdatasubmit{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btns {
+    padding: 10px 17px;
+    color: #fff;
+    font: 15px 'latobold';
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color:#f4824b;
+}
+.datashow{
+    border: 2px solid #dddd;
+    width: 40%;
+    padding: 5px;
+    text-align: center;
+    background: #f4824b;
+    color: #fff;
+    margin-left: 10%;
+}
+
+
+
+.innbanner  img{
+    height: 370px;
+    position: relative;
+    position: relative;
+    /* background-size: cover; */
+    background-position: bottom center;
+    /* background-attachment: fixed; */
+    background-attachment: initial;
+    background-size: 100% 100%;
+    width: 100%;
+    background: linear-gradient(to left, #76a2db, #f8e15b);
+
+  }
+  .innbanner h2 {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #273a4a70;
+      padding: 30px;
+      border-radius: 20px;
+  }
+  .eventsearch{
+      border: 1px solid #fff;
+      text-align: center;
+      padding: 5px;
+      color: #fff;
+      border-radius: 5px;
+  }
+  .eventsearch:hover{
+      background-color: #fff;
+      color: #000;
+  }

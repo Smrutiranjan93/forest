@@ -1,0 +1,606 @@
+@-webkit-keyframes kenburns {
+  0% {
+    -webkit-transform: scale(1);
+    -webkit-transition: -webkit-transform 6000ms linear 2s
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    -webkit-transition: -webkit-transform 6000ms linear 2s
+  }
+
+}
+
+@-moz-keyframes kenburns {
+  0% {
+    -moz-transform: scale(1);
+    -moz-transition: -moz-transform 6000ms linear 2s
+  }
+
+  100% {
+    -moz-transform: scale(1.1);
+    -moz-transition: -moz-transform 7000ms linear 2s
+  }
+
+}
+
+@-ms-keyframes kenburns {
+  0% {
+    -ms-transform: scale(1);
+    -ms-transition: -ms-transform 6000ms linear 2s
+  }
+
+  100% {
+    -ms-transform: scale(1.1);
+    -ms-transition: -ms-transform 6000ms linear 2s
+  }
+
+}
+
+@-o-keyframes kenburns {
+  0% {
+    -o-transform: scale(1);
+    -o-transition: -o-transform 6000ms linear 2s
+  }
+
+  100% {
+    -o-transform: scale(1.1);
+    -o-transition: -o-transform 6000ms linear 2s
+  }
+
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1);
+    transition: transform 6000ms linear 2s
+  }
+
+  100% {
+    transform: scale(1.1);
+    transition: transform 6000ms linear 2s
+  }
+
+}
+
+.centerContent {
+  /* content: " "; */
+  /* display: table; */
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  position: relative;
+  width: auto;
+  color: green;
+
+}
+
+.uk-card-titles {
+  font-size: 18px;
+  color: brown;
+}
+
+.medicalservice li {
+  list-style: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.container-fluid {
+  background-image: url("/assets/fst img/state image/back.gif");
+  background-color: #b33030;
+  // background-color: #000000;
+  height: 100%;
+}
+
+.welcome-inner p {
+  // color: #fff;
+  color: black;
+  font-size: 16px;
+}
+
+// --------------------------------------------
+
+* {
+  box-sizing: border-box;
+}
+
+.state_symbol {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+
+.symbol::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  color: #000000
+}
+
+
+
+
+.welcome-div {
+  width: 49%;
+  padding: 1%;
+}
+
+.main-outer-div {
+  // max-width: 100%;
+  max-width: 73%;
+  // height: 100%;
+  background: #eee;
+  margin: 0 auto;
+  position: relative;
+  background-color: #e6df5b;
+  // background-color: #000000;
+  // background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/sites/default/files/inline-images/forest-canopy.jpg");
+  // background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/sites/default/files/inline-images/forest-canopy.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.team-member-div {
+  width: 49%;
+  // height: 400px;
+  padding: 1%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+}
+
+.welcome-inner {
+  padding: 10% 5% 10% 5%;
+  // border: 1px solid black;
+  // background: gray;
+  background: #76aa08;
+  border-radius: 20px;
+  // border: 1px solid gray;
+  // border-color: goldenrod;
+  border-width: 20px;
+
+}
+
+.welcome-inner ul li {
+  color: black;
+  // color: #fff;
+  font-size: 16px;
+}
+
+.team-member-inner {
+  padding: 5% 5% 5% 5%;
+  // border: 1px solid rgb(19, 16, 16);
+  color:black;
+// color:#fff;
+  // background: rgb(156 225 150 / 62%)
+  background: #408107;;
+  // background: #65DF5F;
+
+}
+
+.welcome-inner h2 {
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  // border-radius: 20px;
+}
+
+.welcome-inner p {
+  color: black;
+  // color: #fff;
+  font-size: 20px;
+}
+
+.rtejustify {
+  text-align: justify;
+}
+
+.team-img img {
+  border-radius: 50%;
+  // border: 2px solid #023b1f;
+  width: 65%;
+  // width: 95px;
+}
+
+.team-discription {
+  width: 75%;
+  color: #000000;
+}
+
+.team-member-body {
+  display: flex;
+  justify-content: flex-end;
+  // align-items: stretch;
+  // padding-bottom: 2%;
+}
+
+.news-updates-div {
+  width: 49%;
+  padding: 1%;
+  border: none;
+}
+
+.tenders-div {
+  width: 49%;
+  padding: 1%;
+  border: none;
+}
+
+.news-update-inner {
+  padding: 10% 5% 10% 5%;
+  //   background: rgb(0, 165, 207, 0.6);
+  background: #408107;
+}
+
+.tender-div-inner {
+  padding: 10% 5% 10% 5%;
+  background: rgba(146, 246, 6, 0.6);
+  //   background: rgb(159, 255, 203, 0.6);
+
+}
+
+.tender-div-inner ul li a {
+  color: black;
+  // color: white;
+  font-size: 17px;
+
+}
+
+.scroll {
+  width: auto;
+  height: 23em;
+  margin: 1em auto;
+  overflow: hidden;
+
+  position: relative;
+  box-sizing: border-box;
+}
+
+.marquee {
+  top: 6em;
+  position: relative;
+  box-sizing: border-box;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Make it move! */
+@keyframes marquee {
+  0% {
+    top: 8em;
+  }
+
+  100% {
+    top: -11em;
+  }
+}
+
+/* Make it look pretty */
+.microsoft .marquee {
+  margin: 0;
+  padding: 0 1em;
+  line-height: 1.5em;
+  font: 1em "Segoe UI", Tahoma, Helvetica, Sans-Serif;
+}
+
+.microsoft:before,
+.microsoft::before,
+.microsoft:after,
+.microsoft::after {
+  left: 0;
+  z-index: 1;
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 2em;
+  background-image: linear-gradient(top, #fff, rgba(255, 255, 255, 0));
+}
+
+.microsoft:after,
+.microsoft::after {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+.microsoft:before,
+.microsoft::before {
+  top: 0;
+}
+
+.microsoft.scroll.tender {
+  height: 275px !important;
+}
+
+li.rtejustify {
+  border-bottom: 1px solid #77ce0a;
+  padding-bottom: 10%;
+}
+
+.news-updates-div ul a {
+  color: black;
+  font-size: 20px;
+  // color: #fff;
+}
+
+.bottom-video {
+
+  right: 0;
+  bottom: 20px;
+  margin-top: 20px;
+}
+
+.video-gal-main {
+  background: #76aa08;
+  padding: 0% 12% 1% 5%;
+  margin-top: 26px;
+}
+
+.video-gal-inner {
+  display: flex;
+  width: 100%;
+  margin-bottom: 7%;
+
+
+}
+
+.video-desc {
+  width: 70%;
+  padding-left: 5px;
+  text-align: justify;
+}
+
+.video-imgs {
+  width: 30%;
+}
+
+.video-desc a {
+  color: black;
+  font-size: 18px;
+  // color: white;
+
+}
+
+.mySlides {
+  display: none;
+  padding: 1%;
+  margin-left: 0;
+
+
+}
+
+.title_text {
+  text-align: center;
+  color: black;
+  // color: #fff;
+  margin-bottom: 0px;
+  padding: 22px 1px 3px 4px;
+  right: 0;
+  bottom: 20px;
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 25px;
+  background: rgb(0, 0, 0, 0.5);
+}
+
+.w3-content w3-section {
+  vertical-align: middle;
+}
+
+.w3-display {
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  font-size: initial;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.site-info {
+  text-align: center;
+  font-size: 13px;
+}
+
+.top_left {
+  float: left;
+}
+
+#site-title {
+  text-align: left;
+  font-size: 25px;
+  color: black;
+  padding-top: 30px;
+  line-height: 0px;
+}
+
+#site-title1 {
+  text-align: left;
+  font-size: 25px;
+  color: black;
+  line-height: 50px;
+}
+
+.col-lg-12.col-xs-12 {
+  padding-top: 30px;
+}
+
+.common-left {
+  float: left;
+  position: relative;
+  padding-left: 0px;
+  background-color: beige;
+  height: 38px;
+}
+
+div.find .bttn-search {
+  background: #057e07;
+  color: #ffffff;
+  border: 1px solid #057e07;
+}
+
+.input {
+  margin: 2px 0;
+  padding: 4px;
+}
+
+.common-left ul li {
+  float: left;
+  line-height: 132%;
+  font-size: 67%;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 36px;
+  padding-top: 10px;
+  padding-left: 3px;
+}
+
+.common-container ul {
+  list-style: none;
+}
+
+.common-left ul li.ministry {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid #eeeeee;
+}
+
+.common-left ul li.gov-india {
+  text-align: right;
+}
+
+.common-left ul li.gov-india {
+  text-align: right;
+  padding-top: 10px;
+}
+
+ul#sizes {
+  font-size: x-large;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fefefe;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.container.symbol {
+  background-image: url("/assets/fst img/state image/back2.gif");
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+
+}
+
+
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+  padding: 30px 20px;
+  height: 350px;
+  padding-top: 35px;
+
+}
+
+.card-body {
+  text-align: center;
+  padding: 50px 10px;
+  // background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+// .card-body{
+//   padding: 30px 20px;
+//   text-align: center;
+//   font-size: 18px;
+// }
+
+// .card-body .btn{
+//   display: block;
+//   color: #fff;
+//   text-align: center;
+//   background: linear-gradient(to rigth, #ff416c, #ff4b2b);
+//   margin: 30px;
+//   text-decoration: none;
+//   padding: 10px 5px;
+// }
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+
+@media screen and (max-width:1000px) {
+  .card {
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-width:620px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+}
+
+// #myDIV{
+//   width: 300px;
+//   height: 200px;
+//   background: red;
+//   animation: mymove 5s infinite;
+// }
+// @keyframes mymove {
+//   from {background-color: red;}
+//   to {background-color: blue;}
+// }

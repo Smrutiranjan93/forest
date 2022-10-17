@@ -1,0 +1,248 @@
+
+ .contentpart {
+    width: 75%;
+    float: left;
+    margin-bottom: 40px;
+}
+.eventTab {
+    position: relative;
+}
+.eventTabNav {
+    margin: 0 0 -1px -1px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.eventTabNav li {
+    margin: 0;
+    position: relative;
+    width: 134px;
+    float: left;
+    padding: 0 0 0 1px;
+}
+.eventTabNav li a:hover, .eventTabNav li a.active {
+    color: #fff;
+    background-color: #f4825b;
+}
+.eventTabNav li a {
+    display: block;
+    padding: 10px 1px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    background-color: #f4824b ;
+    text-align: center;
+}
+.eventTabContainer {
+    min-height: 454px;
+    padding: 25px;
+    border: 1px solid #ddd;
+}
+.dateWrap {
+    min-height: 41px;
+    margin-bottom: 15px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.node-type-event-calendar .dateWrap.dateWrapTop {
+    margin-bottom: 10px;
+}
+.innerContent p {
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+.onDate {
+    display: inline-block;
+    margin: 10px 18px 0 0;
+    padding-left: 27px;
+    vertical-align: top;
+    color: #0054a6;
+    font-size: 14px;
+    position: relative;
+}
+.onDate:before {
+    width: 17px;
+    height: 17px;
+    top: 3px;
+    background-position: 0 -230px;
+}
+
+.dateWrap .btns {
+    float: right;
+    margin: -1px 0;
+    padding-left: 14px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background-color: #f4824b;
+}
+.btns {
+    text-align: center;
+}
+.slideBtn {
+    backface-visibility: hidden;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    //display: inline-block;
+    position: relative;
+    // padding: 9px;
+    color: #fff;
+    float: right;
+}
+btn {
+    padding: 10px 25px;
+    color: #fff;
+    font: 15px 'latobold';
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #f4824b;
+    background-color:#f4824b;
+}
+.btns .btn {
+    min-width: 140px;
+    margin-right: 2px;
+    vertical-align: top;
+    color: #fff;
+}
+.eventCat h3 {
+    float: left;
+    font-family: latobold;
+    color: #0054a6;
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 0;
+}
+.shareThis {
+    float: right;
+    padding-top: 10px;
+}
+.shareThis a.fb {
+    width: 10px;
+    background-position: 0 -300px;
+}
+.shareThis a:first-child {
+    margin-left: 0;
+}
+.shareThis a {
+    height: 18px;
+    float: left;
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+.fa-facebook{
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+.fa-facebook:hover{
+    color: #0054a6;
+    transition: 2s;
+    font-size: 20px;
+    font-weight: 600;
+}
+.fa-twitter{
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+.fa-twitter:hover{
+    color: #0054a6;
+    transition: 2s;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.tab ul{
+    padding: 10px;
+    background: #abf44b;
+    display: block;
+    border-radius: 2px;
+    margin: 0;
+    float: left;
+    text-align: center;
+}
+.tab ul li{
+    display: inline-block;
+    list-style-type: none;
+    border-right: 2px solid #fff;
+    color: rgb(75, 67, 67);
+    font-size: 16px;
+    padding: 0 24px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+.tab ul li.submenu ul{
+    list-style-type: square;
+    position: relative;
+}
+.tab ul li{
+    color: #fff;
+}
+.tab ul li :last-child{
+    border-right: none;
+}
+.tab ul li :hover{
+    color: #f4825b;
+}
+.color{
+    color: #e4ff00 !important;
+}
+.content-tab{
+    //background: rgb(253,250,250);
+    padding: 20px;
+    //border: 1px solid #f4824b;
+}
+.content-value h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+.datashow{
+    border: 2px solid #dddd;
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+    background: #9af44b;
+    color: #fff;
+    margin-left: 10%;
+}
+
+
+.innbanner  img{
+    height: 370px;
+    position: relative;
+    position: relative;
+    /* background-size: cover; */
+    background-position: bottom center;
+    /* background-attachment: fixed; */
+    background-attachment: initial;
+    background-size: 100% 100%;
+    width: 100%;
+    background: linear-gradient(to left, #76a2db, #f8e15b);
+
+  }
+  .innbanner h2 {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #273a4a70;
+      padding: 30px;
+      border-radius: 20px;
+  }
+
+.eventsearch{
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+.eventsearch:hover{
+    background-color: #fff;
+    color: #000;
+}

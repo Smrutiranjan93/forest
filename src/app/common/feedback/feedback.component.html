@@ -1,0 +1,157 @@
+<!-- <section class="innbanner">
+    <img src="assets/images/feedback.png">
+    <h2>Feedback</h2>
+</section>
+<section class="uk-section-small">
+    <div class="uk-container uk-container-small">
+
+        <form [formGroup]="ratingform">
+            <div class="feedback">
+                <div class="cont">
+                    <h2 class="innhead" style="font-family: var(--rubik);font-size: 20px;color: orangered;">Feedback
+                    </h2>
+                    <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-bottom">
+                        <h6>Request Registrations and service response</h6>
+                        <div class="stars">
+                            <ngx-star-rating formControlName="rating1" [id]="'rating1'"></ngx-star-rating>
+                        </div>
+                    </div>
+                </div>
+                <div>Rating: {{ratingform.value.rating1}}</div>
+                <div class="count">
+                    <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-bottom">
+                        <h6>Complaint Registrations and Rectification Services</h6>
+                        <div class="stars">
+                            <ngx-star-rating formControlName="rating2" [id]="'rating2'" title="it'awfull">
+                            </ngx-star-rating>
+                        </div>
+                    </div>
+                </div>
+                <div>Rating: {{ratingform.value.rating2}}</div>
+                <div class="count">
+                    <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-bottom">
+                        <h6>E-Booking through online portal</h6>
+                        <div class="stars">
+                            <ngx-star-rating formControlName="rating3" [id]="'rating3'"></ngx-star-rating>
+                        </div>
+                    </div>
+                </div>
+                <div>Rating: {{ratingform.value.rating3}}</div>
+                <div class="count">
+                    <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-bottom">
+                        <h6>E-Payments through online portal</h6>
+                        <div class="stars">
+                            <ngx-star-rating formControlName="rating4" [id]="'rating4'"></ngx-star-rating>
+                        </div>
+                    </div>
+                </div>
+                <div>Rating: {{ratingform.value.rating4}}</div>
+                <div class="count">
+                    <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-bottom">
+                        <h6>Ease of Use</h6>
+                        <div class="stars">
+                            <ngx-star-rating formControlName="rating5" [id]="'rating5'"></ngx-star-rating>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div>Rating: {{ratingform.value.rating5}}</div>
+            </div>
+        </form>
+
+        <br>
+        <form [formGroup]="feedbackForm" (ngSubmit)="feedback()">
+            <div class="">
+                <div class=" uk-margin-small-bottom">
+                    <label for="">How can we make this site better for you?</label>
+                    <textarea class="form-control uk-input uk-form-danger uk-form-width-medium" type="text"
+                        id="sggestion" [ngClass]="{ 'is-invalid': submitted && f.sggestion.errors }"
+                        formControlName="sggestion" name="" id="" cols="" rows="3" class="uk-textarea"
+                        placeholder="Your Suggestions, ideas, comments will greatly help us..."></textarea>
+                    <div *ngIf="submitted && f.sggestion.errors" class="invalid-feedback">
+                        <div *ngIf="f.sggestion.errors.required">Message is required</div>
+                    </div>
+                </div>
+                <br>
+                <h2 class="innhead" style="font-family: var(--rubik);font-size: 20px;color: orangered;">Demographic
+                    Information</h2>
+                <div class="uk-margin">
+                    <div class="form-item">
+                        <input class="form-control uk-input uk-form-danger uk-form-width-medium" type="text"
+                            id="username" [ngClass]="{ 'is-invalid': submitted && f.name.errors }"
+                            formControlName="name" type="text" id="fname" class="uk-input" autocomplete="off"
+                            required="" value="">
+                        <label for="fname">Full Name</label>
+                        <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                            <div *ngIf="f.name.errors.required">Full Name is required</div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row">
+                    <div class="col-md-6">
+                        <div class="uk-margin">
+                            <div class="form-item">
+                                <input class="form-control uk-input uk-form-danger uk-form-width-medium" type="text"
+                                    id="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                                    formControlName="email" type="text" id="email" class="uk-input" autocomplete="off"
+                                    required="" value="">
+                                <label for="fname">Email ID</label>
+                                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                    <div *ngIf="f.email.errors.required">Valid Email id is required</div>
+                                    <div *ngIf="f.email.errors.pattern">Email must be a valid email address</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="uk-margin">
+                            <div class="form-item">
+                                <input class="form-control uk-input uk-form-danger uk-form-width-medium" type="text"
+                                    id="mobile" formControlName="mobile"
+                                     type="text" id="mobile"
+                                    class="uk-input" autocomplete="off" required="" value="">
+                                <label for="fname">Mobile No</label>
+                                <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
+                                    <div *ngIf="f.mobile.errors">*Mobile Number is required</div>
+                                    <div *ngIf="f.mobile.errors.pattern">*Mobile Number should be 10 digit
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <div class="" uk-grid>
+                        <div class="uk-width-1-3@m uk-width-1-1">
+                            <div class="form-item">
+                                <input class="form-control uk-input uk-form-danger uk-form-width-medium" type="text"
+                                    id="capatch" [ngClass]="{ 'is-invalid': submitted && f.capatch.errors }"
+                                    formContrlName="capatch" type="text" id="capatch" class="uk-input" autocomplete="off"
+                                    required="" value="">
+                                <label for="capatch">Captcha</label>
+                                <div *ngIf="submitted && f.capatch.errors" class="invalid-feedback">
+                                    <div *ngIf="f.capatch.errors.required"> Captcha is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="uk-width-expand@m uk-width-1-1">
+                            C a P t C h A
+                        </div> -->
+                    <!-- </div>
+                </div>
+                <div class="uk-margin uk-flex uk-flex-right">
+                    <button class="uk-button uk-button-danger">Reset</button>
+                    <button class="uk-button uk-button-primary uk-margin-small-left" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+</section> --> -->

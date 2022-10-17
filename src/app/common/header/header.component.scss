@@ -1,0 +1,32 @@
+#google_translate_element{
+    line-height: 0%;
+    min-width: 50%;
+}
+.topnav a:hover {
+    border-bottom: 3px solid red;
+}
+.newmenu{
+    display: unset;
+}
+.mymenu{
+    display: none;
+}
+
+.navigation{
+    color: white;
+    // background-color: green;
+}
+.navigation ul li a:hover{
+    background-color: green;
+    color: white;
+}
+.drpdown ul li a:hover{
+    background-color: green;
+    color: white;
+}
+.container ul li a{
+    font-size: 15px;
+}
+.nav-item a{
+    color: rgb(4, 4, 60);
+}

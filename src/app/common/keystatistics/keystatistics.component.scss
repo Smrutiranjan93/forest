@@ -1,0 +1,76 @@
+.advancesearch{
+    font-size: 12px;
+    margin-left: 13%;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+  h5{
+    border: 1px solid #848484;;
+    padding: 8px;
+    background: #848484; 
+    color: #fff;
+}
+
+.border {
+    height: 5px;
+    margin: 20px auto 20px;
+    position: relative;
+    width: 80px;
+    background: linear-gradient(to left, #f8ce25, #f45200);
+}
+
+.statisticalreport th {
+    background-color: #f45200 ;
+    border-color: #f8ce25;
+    padding: 10px 10px !important;
+    color: #fff;
+    font-size: 16px;  
+    height: 50px;
+}
+.table table-bordered{
+    background: linear-gradient(to left, #f8ce25, #f45200);
+    background-color: #f45200;
+    border-color: #f8ce25;
+}
+#myTable img {
+    height:30px;
+    padding: 5px;
+  max-width: 20%;
+  }
+  .innbanner  img{
+    height: 370px;
+    position: relative;
+    position: relative;
+    /* background-size: cover; */
+    background-position: bottom center;
+    /* background-attachment: fixed; */
+    background-attachment: initial;
+    background-size: 100% 100%;
+    width: 100%;
+    background: linear-gradient(to left, #76a2db, #f8e15b);
+
+  }
+  .innbanner h2 {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #273a4a70;
+      padding: 30px;
+      border-radius: 20px;
+  }
+  .eventsearch{
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+.eventsearch:hover{
+    background-color: #fff;
+    color: #000;
+}

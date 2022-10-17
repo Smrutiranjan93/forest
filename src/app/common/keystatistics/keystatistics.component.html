@@ -1,0 +1,107 @@
+<section class="innbanner">
+  <img  src="assets/images/keystatistics.png">
+  <h2>Key Statistics</h2>
+</section>
+<section>
+
+  <div class="container-fluid uk-position-relative panel-heading">
+    <div style=" background: linear-gradient(to left, #f8ce25, #f45200);
+    background-color: #f45200;
+    border-color: #f8ce25;padding:10px;margin-top:50px;margin-bottom:50px;width: 74.3%;"
+      class="container">
+      <div class="row">
+
+        <div class="col-sm-6 " >
+          <select name="role" class="custom-select">
+            <option selected>All</option>
+            <option value="user">Annual Report</option>
+            <option value="user">Census</option>
+            <option value="user">Citizen Character</option>
+            <option value="user">District Profile</option>
+            <option value="user">Guidelines</option>
+            <option value="user">Notification</option>
+            <option value="user">Office Order</option>
+            <option value="user">Others</option>
+            <option value="user">Plan Report</option>
+            <option value="user">Statistical Report</option>
+          </select>
+        </div>
+        <div class="col-sm-4">
+      
+         
+          <a routerLink="/eventlist">
+            <div class="eventsearch">Search</div>
+            </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container" style="width: 100%;">
+    <div class="col-12" style="padding-top:1rem;">
+      <div class="title text-center event">
+          <h2 style="font-size: large;">Statistical Report</h2>
+          <div class="border"></div>
+      </div>
+  </div>
+    <table class="table table-bordered table-striped" style="margin-top: -8px;margin-bottom: 20%;">
+      <thead class="statisticalreport">
+        <tr>
+          <th>Title</th>
+          <th>Date</th>
+          <th>View / Download</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
+        <tr>
+          <td>plan report</td>
+          <td>15/02/2018</td>
+          <td><a data-toggle="modal" data-target="#myModal"><span style="color: blue;">view</span>&nbsp;&nbsp;<span
+               ><img src="assets/images/pdf.png"/></span></a>&nbsp;&nbsp;<a (click)="downloadMyFile()"><span><i
+                class="fa fa-download"></i></span></a></td>
+        </tr>
+        <tr>
+          <td>Annual Report</td>
+          <td>15/02/2018</td>
+          <td><a data-toggle="modal" data-target="#myModal"><span style="color: blue;">view</span>&nbsp;&nbsp;<span
+           ><img src="assets/images/pdf.png"/></span></a>&nbsp;&nbsp;<a (click)="downloadMyFile()"><span><i
+            class="fa fa-download"></i></span></a></td>
+        </tr>
+        <tr>
+          <td>District Profile</td>
+          <td>15/02/2018</td>
+          <td><a data-toggle="modal" data-target="#myModal"><span style="color: blue;">view</span>&nbsp;&nbsp;<span
+           ><img src="assets/images/pdf.png"/></span></a>&nbsp;&nbsp;<a (click)="downloadMyFile()"><span><i
+            class="fa fa-download"></i></span></a></td>
+        </tr>
+        <tr>
+          <td>Statistical Report</td>
+          <td>15/02/2018</td>
+          <td><a data-toggle="modal" data-target="#myModal"><span style="color: blue;">view</span>&nbsp;&nbsp;<span
+            ><img src="assets/images/pdf.png"/></span></a>&nbsp;&nbsp;<a (click)="downloadMyFile()"><span><i
+            class="fa fa-download"></i></span></a></td>
+        </tr>
+        <!-- Modal start-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+              <div class="modal-body">
+                <div style="text-align: center;">
+                  <iframe src="assets/images/blank.pdf" style="width:400px; height:500px;" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal end-->
+      </tbody>
+    </table>
+
+  </div>
+</section>

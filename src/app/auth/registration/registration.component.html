@@ -1,0 +1,139 @@
+  <section class="uk-section-small" id="login-section">
+    <div class="uk-container" id="register-container" style="margin-top: 50px;">
+        <h3>Create New Registration</h3>
+        <div class="register-wrapper">
+            <div class="complaint-form">                
+                <div *ngIf="error">
+                    <p class="text-danger"></p>
+                </div>
+                <form action="" id="register" >
+                    <fieldset id="register-input">
+                        <div class="register-input">
+                            <label for="firstname">Enter your First Name</label>
+                            <input type="text"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            name="firstname"
+                            id="firstname"
+                            placeholder="First Name"
+                            value=""
+                            formControlName="firstName"
+                            
+                            >
+                            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                                <div *ngIf="f.firstName.errors.minlength">First Name should be minimum 1 character long</div>
+                                <div *ngIf="f.firstName.errors.maxlength">First Name should be maximum 20 character long</div>
+                                <div *ngIf="f.firstName.errors.pattern">Only characters are allowed</div>
+                            </div>
+                        </div>
+                        <div class="register-input">
+                            <label for="firstname">Enter your Last Name</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" value=""
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                             formControlName="lastName"
+                            
+                            >
+                            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                                <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                                <div *ngIf="f.lastName.errors.pattern">Only characters not allowed</div>
+                                <div *ngIf="f.lastName.errors.maxlength">Last Name should be maximum 20 character long</div>
+                            </div>
+                        </div>
+                        <div class="register-input">
+                            <label for="firstname">Select Gender</label>
+                            <select
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            formControlName="gender"
+                            id="gender"
+                           
+                            >
+                                <option value = '' [disabled]="true" selected hidden>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                            <div *ngIf="submitted && f.gender.errors" class="invalid-feedback">
+                                <div *ngIf="f.gender.errors.required">Gender is required</div>
+                            </div>
+                        </div>
+                        <div class="register-input">
+                            <label for="mobileNo">Enter your Mobile Number</label>
+                            <input type="text" type="mobileNo" id="mobileNo" placeholder="Mobile Number"
+                                class="form-control uk-input uk-form-danger uk-form-width-medium"
+                               
+                                (keypress)=numericOnly($event) formControlName="mobileNo"
+                            >
+                            <div *ngIf="submitted && f.mobileNo.errors" class="invalid-feedback">  
+                                <div *ngIf="f.mobileNo.errors.required">Mobile Number is required</div>
+                                <div *ngIf="f.mobileNo.errors.pattern">Please, Enter 10 digit Mobile Number</div>
+                            </div>
+                        </div>
+                        <div class="register-input">
+                            <label for="emailId">Enter your Email ID</label>
+                            <input type="text" type="emailId" id="emailId" placeholder="username@host.com"
+                                class="form-control uk-input uk-form-danger uk-form-width-medium"
+                                formControlName="emailId"
+                                
+                            >
+                            <div *ngIf="submitted && f.emailId.errors" class="invalid-feedback">
+                                <div *ngIf="f.emailId.errors.required">Email is required</div>
+                                <div *ngIf="f.emailId.errors.pattern">Email must be a valid email address</div>
+                            </div>
+                        </div>
+                        <div class="register-input">
+                            <label for="address">Enter your Address</label>
+                            <input type="text" type="address" id="address" placeholder="address"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            formControlName="address"
+                            
+                            >
+                            <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+                                <div *ngIf="f.address.errors.required">Address is required</div>
+                            </div>
+                        </div>
+                        <div class="register-input">
+                            <label for="password">Enter your Password</label>
+                            <input type="text" type="password" id="password" placeholder="password"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            formControlName="password"
+                           
+                            >
+                            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                            <div *ngIf="f.password.errors.required">Password is required</div>
+                            <div *ngIf="f.password.errors.pattern">
+                                Password must be 6 to 20 characters which contain<br>at least one uppercase and one lowercase letter <br> one numeric digit and a special character
+                                </div>
+                            </div>
+                        </div>
+                        <div class="register-input">
+                            <label for="confirm-password">Enter your Confirm Password</label>
+                            <input type="text" type="password" id="confirmPassword" placeholder="confirmPassword"
+                            class="form-control uk-input uk-form-danger uk-form-width-medium"
+                            formControlName="confirmPassword"
+                            
+                            >
+                            <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                                <div *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
+                                <div *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
+                            </div>
+                        </div>
+                        <div class="register-input" [hidden]="!hide">
+                            <input type="hidden" type="username" id="username" placeholder="username"
+                                class="form-control uk-input uk-form-danger uk-form-width-medium" formControlName="username"
+                            >                          
+                        </div>
+                        <div class="register-input" [hidden]="!hide">
+                            <input type="hidden" type="role" id="role" placeholder="role"
+                                class="form-control uk-input uk-form-danger uk-form-width-medium" formControlName="role"
+                            >                          
+                        </div>
+                    </fieldset>
+                    <div class="register-input register-submit">
+                        <button class="uk-button uk-button-primary uk-width-1-1">REGISTER</button>
+                        <!-- <input type="submit" value="REGISTER" id="complaint-submit" /> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
